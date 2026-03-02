@@ -1,0 +1,106 @@
+[
+  {
+    "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_9_mri_0_5978_jpeg.rf.f44ee7f2fdc1c1a2670d30ec7c1a66fd_0014.jpg",
+    "true_class": "Comminuted",
+    "models": {
+      "maxvit": {
+        "available": true,
+        "mean_activation": 0.044305965304374695,
+        "max_activation": 0.9999998807907104,
+        "active_fraction": 0.02369658801020408,
+        "centroid_x": 0.3828134386639433,
+        "centroid_y": 0.9382621951219512,
+        "pred_class": "Comminuted",
+        "confidence": 0.9997074007987976
+      },
+      "hypercolumn_cbam_densenet169": {
+        "available": true,
+        "mean_activation": 0.550383985042572,
+        "max_activation": 0.9999998807907104,
+        "active_fraction": 0.5975167410714286,
+        "centroid_x": 0.5840027553164624,
+        "centroid_y": 0.3879943904949325,
+        "pred_class": "Comminuted",
+        "confidence": 0.9984177350997925
+      }
+    }
+  },
+  {
+    "image": "balanced_augmented_dataset/test/Oblique/Oblique_127_jpg.rf.317404e014bd1e9eb0e8de43d9aa427a_0000.jpg",
+    "true_class": "Oblique Displaced",
+    "models": {
+      "maxvit": {
+        "available": true,
+        "mean_activation": 0.2282501459121704,
+        "max_activation": 0.9999998807907104,
+        "active_fraction": 0.07437818877551021,
+        "centroid_x": 0.2855611698055428,
+        "centroid_y": 0.5491286747818098,
+        "pred_class": "Oblique Displaced",
+        "confidence": 0.9994423985481262
+      },
+      "hypercolumn_cbam_densenet169": {
+        "available": true,
+        "mean_activation": 0.5168635845184326,
+        "max_activation": 0.9999998807907104,
+        "active_fraction": 0.5302136479591837,
+        "centroid_x": 0.5821887350452134,
+        "centroid_y": 0.41651463528577876,
+        "pred_class": "Oblique Displaced",
+        "confidence": 0.9993950128555298
+      }
+    }
+  },
+  {
+    "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_69_jpg.rf.2719c75f64f1281b6d2fde87672137b5_0015.jpg",
+    "true_class": "Transverse",
+    "models": {
+      "maxvit": {
+        "available": true,
+        "mean_activation": 0.26937174797058105,
+        "max_activation": 0.9999998807907104,
+        "active_fraction": 0.20563616071428573,
+        "centroid_x": 0.5006273710298231,
+        "centroid_y": 0.6937650569047157,
+        "pred_class": "Transverse",
+        "confidence": 0.9910380840301514
+      },
+      "hypercolumn_cbam_densenet169": {
+        "available": true,
+        "mean_activation": 0.5686703324317932,
+        "max_activation": 0.9999998807907104,
+        "active_fraction": 0.5846819196428571,
+        "centroid_x": 0.5796633882615323,
+        "centroid_y": 0.4858010849293189,
+        "pred_class": "Transverse",
+        "confidence": 0.7168634533882141
+      }
+    }
+  },
+  {
+    "image": "balanced_augmented_dataset/test/Spiral/Spiral_104_jpg.rf.ccaa67393ec31cb33304c7e64414ba57_0011.jpg",
+    "true_class": "Spiral",
+    "models": {
+      "maxvit": {
+        "available": true,
+        "mean_activation": 0.13611194491386414,
+        "max_activation": 0.9999998807907104,
+        "active_fraction": 0.07415896045918367,
+        "centroid_x": 0.43622706069796907,
+        "centroid_y": 0.8884900372403732,
+        "pred_class": "Spiral",
+        "confidence": 0.9994738698005676
+      },
+      "hypercolumn_cbam_densenet169": {
+        "available": true,
+        "mean_activation": 0.6127142906188965,
+        "max_activation": 0.9999998807907104,
+        "active_fraction": 0.6675502232142857,
+        "centroid_x": 0.5648573614398738,
+        "centroid_y": 0.4481091260955793,
+        "pred_class": "Spiral",
+        "confidence": 0.9934630393981934
+      }
+    }
+  }
+]

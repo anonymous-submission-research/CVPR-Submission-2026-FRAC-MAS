@@ -1,0 +1,195 @@
+<python>/site-packages/pydantic\_internal\_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+<python>/site-packages/pydantic\_internal\_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+<python>/site-packages/sklearn\base.py:440: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+<python>/site-packages/sklearn\base.py:440: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.7.2 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+<python>/site-packages/sklearn\base.py:440: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.7.2 when using version 1.7.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+======================================================================
+TEST COMBO 1: maxvit, hypercolumn_cbam_densenet169_focal, yolo
+======================================================================
+Initializing Ensemble...
+Loading 3 models from \outputs\cross_validation on cpu...
+  ✅ Successfully loaded maxvit.
+  ✅ Successfully loaded hypercolumn_cbam_densenet169_focal.
+  ✅ Successfully loaded yolo (YOLO) from outputs/yolo_cls_finetune/yolo_cls_ft/weights/best.pt.
+✅ Loaded stacker from \outputs\stacker.joblib
+⚠️ Note: Stacker was trained with 4 models, using 3 models may affect results
+
+Running evaluation on \balanced_augmented_dataset\test...
+
+Evaluating Comminuted:   0%|          | 0/17 [00:00<?, ?it/s]
+Evaluating Comminuted:   6%|5         | 1/17 [00:00<00:12,  1.28it/s]
+Evaluating Comminuted:  12%|#1        | 2/17 [00:01<00:08,  1.87it/s]
+Evaluating Comminuted:  18%|#7        | 3/17 [00:01<00:05,  2.37it/s]
+Evaluating Comminuted:  24%|##3       | 4/17 [00:01<00:04,  2.67it/s]
+Evaluating Comminuted:  29%|##9       | 5/17 [00:02<00:04,  2.97it/s]
+Evaluating Comminuted:  35%|###5      | 6/17 [00:02<00:03,  3.11it/s]
+Evaluating Comminuted:  41%|####1     | 7/17 [00:02<00:03,  3.18it/s]
+Evaluating Comminuted:  47%|####7     | 8/17 [00:02<00:02,  3.19it/s]
+Evaluating Comminuted:  53%|#####2    | 9/17 [00:03<00:02,  3.11it/s]
+Evaluating Comminuted:  59%|#####8    | 10/17 [00:03<00:02,  3.20it/s]
+Evaluating Comminuted:  65%|######4   | 11/17 [00:03<00:01,  3.24it/s]
+Evaluating Comminuted:  71%|#######   | 12/17 [00:04<00:01,  3.30it/s]
+Evaluating Comminuted:  76%|#######6  | 13/17 [00:04<00:01,  3.26it/s]
+Evaluating Comminuted:  82%|########2 | 14/17 [00:04<00:00,  3.30it/s]
+Evaluating Comminuted:  88%|########8 | 15/17 [00:05<00:00,  3.37it/s]
+Evaluating Comminuted:  94%|#########4| 16/17 [00:05<00:00,  3.43it/s]
+Evaluating Comminuted: 100%|##########| 17/17 [00:05<00:00,  3.42it/s]
+                                                                      
+
+Evaluating Greenstick:   0%|          | 0/13 [00:00<?, ?it/s]
+Evaluating Greenstick:   8%|7         | 1/13 [00:00<00:03,  3.66it/s]
+Evaluating Greenstick:  15%|#5        | 2/13 [00:00<00:03,  3.47it/s]
+Evaluating Greenstick:  23%|##3       | 3/13 [00:00<00:02,  3.64it/s]
+Evaluating Greenstick:  31%|###       | 4/13 [00:01<00:02,  3.51it/s]
+Evaluating Greenstick:  38%|###8      | 5/13 [00:01<00:02,  3.50it/s]
+Evaluating Greenstick:  46%|####6     | 6/13 [00:01<00:02,  3.46it/s]
+Evaluating Greenstick:  54%|#####3    | 7/13 [00:01<00:01,  3.53it/s]
+Evaluating Greenstick:  62%|######1   | 8/13 [00:02<00:01,  3.48it/s]
+Evaluating Greenstick:  69%|######9   | 9/13 [00:02<00:01,  3.46it/s]
+Evaluating Greenstick:  77%|#######6  | 10/13 [00:02<00:00,  3.47it/s]
+Evaluating Greenstick:  85%|########4 | 11/13 [00:03<00:00,  3.44it/s]
+Evaluating Greenstick:  92%|#########2| 12/13 [00:03<00:00,  3.48it/s]
+Evaluating Greenstick: 100%|##########| 13/13 [00:03<00:00,  3.48it/s]
+                                                                      
+
+Evaluating Healthy:   0%|          | 0/10 [00:00<?, ?it/s]
+Evaluating Healthy:  10%|#         | 1/10 [00:00<00:02,  3.25it/s]
+Evaluating Healthy:  20%|##        | 2/10 [00:00<00:02,  3.34it/s]
+Evaluating Healthy:  30%|###       | 3/10 [00:00<00:02,  3.34it/s]
+Evaluating Healthy:  40%|####      | 4/10 [00:01<00:01,  3.41it/s]
+Evaluating Healthy:  50%|#####     | 5/10 [00:01<00:01,  3.40it/s]
+Evaluating Healthy:  60%|######    | 6/10 [00:01<00:01,  3.39it/s]
+Evaluating Healthy:  70%|#######   | 7/10 [00:02<00:00,  3.35it/s]
+Evaluating Healthy:  80%|########  | 8/10 [00:02<00:00,  3.40it/s]
+Evaluating Healthy:  90%|######### | 9/10 [00:02<00:00,  3.48it/s]
+Evaluating Healthy: 100%|##########| 10/10 [00:02<00:00,  3.41it/s]
+                                                                   
+
+Evaluating Oblique:   0%|          | 0/9 [00:00<?, ?it/s]
+Evaluating Oblique:  11%|#1        | 1/9 [00:00<00:02,  3.53it/s]
+Evaluating Oblique:  22%|##2       | 2/9 [00:00<00:01,  3.51it/s]
+Evaluating Oblique:  33%|###3      | 3/9 [00:00<00:01,  3.51it/s]
+Evaluating Oblique:  44%|####4     | 4/9 [00:01<00:01,  3.49it/s]
+Evaluating Oblique:  56%|#####5    | 5/9 [00:01<00:01,  3.45it/s]
+Evaluating Oblique:  67%|######6   | 6/9 [00:01<00:00,  3.49it/s]
+Evaluating Oblique:  78%|#######7  | 7/9 [00:01<00:00,  3.52it/s]
+Evaluating Oblique:  89%|########8 | 8/9 [00:02<00:00,  3.47it/s]
+Evaluating Oblique: 100%|##########| 9/9 [00:02<00:00,  3.54it/s]
+                                                                 
+
+Evaluating Oblique_Displaced:   0%|          | 0/17 [00:00<?, ?it/s]
+Evaluating Oblique_Displaced:   6%|5         | 1/17 [00:00<00:04,  3.66it/s]
+Evaluating Oblique_Displaced:  12%|#1        | 2/17 [00:00<00:04,  3.66it/s]
+Evaluating Oblique_Displaced:  18%|#7        | 3/17 [00:00<00:03,  3.59it/s]
+Evaluating Oblique_Displaced:  24%|##3       | 4/17 [00:01<00:03,  3.55it/s]
+Evaluating Oblique_Displaced:  29%|##9       | 5/17 [00:01<00:03,  3.59it/s]
+Evaluating Oblique_Displaced:  35%|###5      | 6/17 [00:01<00:03,  3.63it/s]
+Evaluating Oblique_Displaced:  41%|####1     | 7/17 [00:01<00:02,  3.52it/s]
+Evaluating Oblique_Displaced:  47%|####7     | 8/17 [00:02<00:02,  3.56it/s]
+Evaluating Oblique_Displaced:  53%|#####2    | 9/17 [00:02<00:02,  3.52it/s]
+Evaluating Oblique_Displaced:  59%|#####8    | 10/17 [00:02<00:01,  3.55it/s]
+Evaluating Oblique_Displaced:  65%|######4   | 11/17 [00:03<00:01,  3.56it/s]
+Evaluating Oblique_Displaced:  71%|#######   | 12/17 [00:03<00:01,  3.54it/s]
+Evaluating Oblique_Displaced:  76%|#######6  | 13/17 [00:03<00:01,  3.56it/s]
+Evaluating Oblique_Displaced:  82%|########2 | 14/17 [00:03<00:00,  3.64it/s]
+Evaluating Oblique_Displaced:  88%|########8 | 15/17 [00:04<00:00,  3.47it/s]
+Evaluating Oblique_Displaced:  94%|#########4| 16/17 [00:04<00:00,  3.46it/s]
+Evaluating Oblique_Displaced: 100%|##########| 17/17 [00:04<00:00,  3.47it/s]
+                                                                             
+
+Evaluating Spiral:   0%|          | 0/12 [00:00<?, ?it/s]
+Evaluating Spiral:   8%|8         | 1/12 [00:00<00:02,  3.75it/s]
+Evaluating Spiral:  17%|#6        | 2/12 [00:00<00:02,  3.60it/s]
+Evaluating Spiral:  25%|##5       | 3/12 [00:00<00:02,  3.72it/s]
+Evaluating Spiral:  33%|###3      | 4/12 [00:01<00:02,  3.57it/s]
+Evaluating Spiral:  42%|####1     | 5/12 [00:01<00:02,  3.49it/s]
+Evaluating Spiral:  50%|#####     | 6/12 [00:01<00:01,  3.35it/s]
+Evaluating Spiral:  58%|#####8    | 7/12 [00:02<00:01,  3.34it/s]
+Evaluating Spiral:  67%|######6   | 8/12 [00:02<00:01,  3.38it/s]
+Evaluating Spiral:  75%|#######5  | 9/12 [00:02<00:00,  3.39it/s]
+Evaluating Spiral:  83%|########3 | 10/12 [00:02<00:00,  3.43it/s]
+Evaluating Spiral:  92%|#########1| 11/12 [00:03<00:00,  3.43it/s]
+Evaluating Spiral: 100%|##########| 12/12 [00:03<00:00,  3.55it/s]
+                                                                  
+
+Evaluating Transverse:   0%|          | 0/17 [00:00<?, ?it/s]
+Evaluating Transverse:   6%|5         | 1/17 [00:00<00:04,  3.34it/s]
+Evaluating Transverse:  12%|#1        | 2/17 [00:00<00:04,  3.46it/s]
+Evaluating Transverse:  18%|#7        | 3/17 [00:00<00:04,  3.47it/s]
+Evaluating Transverse:  24%|##3       | 4/17 [00:01<00:03,  3.48it/s]
+Evaluating Transverse:  29%|##9       | 5/17 [00:01<00:03,  3.55it/s]
+Evaluating Transverse:  35%|###5      | 6/17 [00:01<00:03,  3.54it/s]
+Evaluating Transverse:  41%|####1     | 7/17 [00:02<00:02,  3.48it/s]
+Evaluating Transverse:  47%|####7     | 8/17 [00:02<00:02,  3.58it/s]
+Evaluating Transverse:  53%|#####2    | 9/17 [00:02<00:02,  3.61it/s]
+Evaluating Transverse:  59%|#####8    | 10/17 [00:02<00:01,  3.57it/s]
+Evaluating Transverse:  65%|######4   | 11/17 [00:03<00:01,  3.57it/s]
+Evaluating Transverse:  71%|#######   | 12/17 [00:03<00:01,  3.53it/s]
+Evaluating Transverse:  76%|#######6  | 13/17 [00:03<00:01,  3.43it/s]
+Evaluating Transverse:  82%|########2 | 14/17 [00:03<00:00,  3.46it/s]
+Evaluating Transverse:  88%|########8 | 15/17 [00:04<00:00,  3.48it/s]
+Evaluating Transverse:  94%|#########4| 16/17 [00:04<00:00,  3.46it/s]
+Evaluating Transverse: 100%|##########| 17/17 [00:04<00:00,  3.44it/s]
+                                                                      
+
+Evaluating Transverse_Displaced:   0%|          | 0/17 [00:00<?, ?it/s]
+Evaluating Transverse_Displaced:   6%|5         | 1/17 [00:00<00:04,  3.26it/s]
+Evaluating Transverse_Displaced:  12%|#1        | 2/17 [00:00<00:04,  3.14it/s]
+Evaluating Transverse_Displaced:  18%|#7        | 3/17 [00:00<00:04,  3.20it/s]
+Evaluating Transverse_Displaced:  24%|##3       | 4/17 [00:01<00:04,  3.18it/s]
+Evaluating Transverse_Displaced:  29%|##9       | 5/17 [00:01<00:03,  3.24it/s]
+Evaluating Transverse_Displaced:  35%|###5      | 6/17 [00:01<00:03,  3.23it/s]
+Evaluating Transverse_Displaced:  41%|####1     | 7/17 [00:02<00:03,  3.13it/s]
+Evaluating Transverse_Displaced:  47%|####7     | 8/17 [00:02<00:02,  3.17it/s]
+Evaluating Transverse_Displaced:  53%|#####2    | 9/17 [00:02<00:02,  3.22it/s]
+Evaluating Transverse_Displaced:  59%|#####8    | 10/17 [00:03<00:02,  3.31it/s]
+Evaluating Transverse_Displaced:  65%|######4   | 11/17 [00:03<00:01,  3.27it/s]
+Evaluating Transverse_Displaced:  71%|#######   | 12/17 [00:03<00:01,  3.21it/s]
+Evaluating Transverse_Displaced:  76%|#######6  | 13/17 [00:04<00:01,  3.24it/s]
+Evaluating Transverse_Displaced:  82%|########2 | 14/17 [00:04<00:00,  3.26it/s]
+Evaluating Transverse_Displaced:  88%|########8 | 15/17 [00:04<00:00,  3.21it/s]
+Evaluating Transverse_Displaced:  94%|#########4| 16/17 [00:04<00:00,  3.27it/s]
+Evaluating Transverse_Displaced: 100%|##########| 17/17 [00:05<00:00,  3.26it/s]
+                                                                                
+
+======================================================================
+TEST COMBO 1 RESULTS - STACKING ENSEMBLE EVALUATION
+======================================================================
+Models: maxvit, hypercolumn_cbam_densenet169_focal, yolo
+Total Samples Evaluated: 112
+
+----------------------------------------------------------------------
+                      precision    recall  f1-score   support
+
+          Comminuted     0.9444    1.0000    0.9714        17
+          Greenstick     0.8667    1.0000    0.9286        13
+             Healthy     0.8333    1.0000    0.9091        10
+             Oblique     1.0000    0.8889    0.9412         9
+   Oblique_Displaced     0.7857    0.6471    0.7097        17
+              Spiral     1.0000    1.0000    1.0000        12
+          Transverse     0.8824    0.8824    0.8824        17
+Transverse_Displaced     0.6875    0.6471    0.6667        17
+
+            accuracy                         0.8661       112
+           macro avg     0.8750    0.8832    0.8761       112
+        weighted avg     0.8634    0.8661    0.8620       112
+
+
+Confusion Matrix:
+[[17  0  0  0  0  0  0  0]
+ [ 0 13  0  0  0  0  0  0]
+ [ 0  0 10  0  0  0  0  0]
+ [ 0  0  1  8  0  0  0  0]
+ [ 0  1  0  0 11  0  0  5]
+ [ 0  0  0  0  0 12  0  0]
+ [ 0  0  0  0  2  0 15  0]
+ [ 1  1  1  0  1  0  2 11]]
+======================================================================

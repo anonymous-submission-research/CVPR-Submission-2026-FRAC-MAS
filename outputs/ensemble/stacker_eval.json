@@ -1,0 +1,15 @@
+{
+  "val_accuracy": 0.9090909090909091,
+  "best_params": {
+    "clf__C": 0.01,
+    "clf__penalty": "l2"
+  },
+  "model_names": [
+    "maxvit",
+    "yolo",
+    "hypercolumn_cbam_densenet169",
+    "rad_dino"
+  ],
+  "num_models": 4,
+  "num_classes": 8
+}

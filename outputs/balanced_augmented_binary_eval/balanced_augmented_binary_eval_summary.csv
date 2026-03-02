@@ -1,0 +1,21 @@
+Run,Threshold_Type,Threshold,Description,N,N_Positive,N_Negative,Accuracy,Precision,Recall,F1,Sensitivity,Specificity,NPV,MCC,Cohen_Kappa,AUC,TP,TN,FP,FN,Detection_Rate,Youden_J
+MaxViT,default,0.5,Individual model: MaxViT,110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,
+MaxViT,optimal,0.9835727382451296,Individual model: MaxViT,110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,1.0
+YOLO,default,0.5,Individual model: YOLO,110,100,10,0.990909090909091,1.0,0.99,0.9949748743718593,0.99,1.0,0.9090909090909091,0.9486832980505139,0.9473684210526316,1.0,99,10,0,1,0.99,
+YOLO,optimal,0.3957269787788391,Individual model: YOLO,110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,1.0
+HyperColumn-CBAM-DenseNet169,default,0.5,Individual model: HyperColumn-CBAM-DenseNet169,110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,
+HyperColumn-CBAM-DenseNet169,optimal,0.6166883409023285,Individual model: HyperColumn-CBAM-DenseNet169,110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,1.0
+RAD-DINO,default,0.5,Individual model: RAD-DINO,110,100,10,0.990909090909091,0.9900990099009901,1.0,0.9950248756218906,1.0,0.9,1.0,0.9439751632913289,0.9424083769633508,0.989,100,9,1,0,1.0,
+RAD-DINO,optimal,0.5025564730167389,Individual model: RAD-DINO,110,100,10,0.990909090909091,0.9900990099009901,1.0,0.9950248756218906,1.0,0.9,1.0,0.9439751632913289,0.9424083769633508,0.989,100,9,1,0,1.0,0.9
+Ensemble (Weighted Avg),default,0.5,Full 4-model ensemble with weighted-average strategy,110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,
+Ensemble (Weighted Avg),optimal,0.7516528705600649,Full 4-model ensemble with weighted-average strategy,110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,1.0
+Ensemble (Stacking),default,0.5,Full 4-model ensemble with stacking meta-classifier,110,100,10,0.9090909090909091,0.9090909090909091,1.0,0.9523809523809523,1.0,0.0,,0.0,0.0,1.0,100,0,10,0,1.0,
+Ensemble (Stacking),optimal,0.8785937731887477,Full 4-model ensemble with stacking meta-classifier,110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,1.0
+Triplet (w/o MaxViT),default,0.5,"3-model ensemble: YOLO, HyperColumn-CBAM-DenseNet169, RAD-DINO (weighted avg)",110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,
+Triplet (w/o MaxViT),optimal,0.6730865389108658,"3-model ensemble: YOLO, HyperColumn-CBAM-DenseNet169, RAD-DINO (weighted avg)",110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,1.0
+Triplet (w/o YOLO),default,0.5,"3-model ensemble: MaxViT, HyperColumn-CBAM-DenseNet169, RAD-DINO (weighted avg)",110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,
+Triplet (w/o YOLO),optimal,0.8090572499592479,"3-model ensemble: MaxViT, HyperColumn-CBAM-DenseNet169, RAD-DINO (weighted avg)",110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,1.0
+Triplet (w/o HyperColumn-CBAM-DenseNet169),default,0.5,"3-model ensemble: MaxViT, YOLO, RAD-DINO (weighted avg)",110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,
+Triplet (w/o HyperColumn-CBAM-DenseNet169),optimal,0.7198276473209262,"3-model ensemble: MaxViT, YOLO, RAD-DINO (weighted avg)",110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,1.0
+Triplet (w/o RAD-DINO),default,0.5,"3-model ensemble: MaxViT, YOLO, HyperColumn-CBAM-DenseNet169 (weighted avg)",110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,
+Triplet (w/o RAD-DINO),optimal,0.7434024615213275,"3-model ensemble: MaxViT, YOLO, HyperColumn-CBAM-DenseNet169 (weighted avg)",110,100,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,100,10,0,0,1.0,1.0

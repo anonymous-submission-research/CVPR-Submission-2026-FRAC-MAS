@@ -1,0 +1,212 @@
+[
+  {
+    "image": "test_images/Comminuted_7_mri_0_5567_jpeg.rf.02a1bcb53a33005e150fc42fa0e16993_0004.jpg",
+    "diagnosis": {
+      "predicted_class": "Comminuted",
+      "confidence_score": 0.9999904632568359,
+      "fracture_detected": true,
+      "all_probabilities": {
+        "Comminuted": 0.9999904632568359,
+        "Greenstick": 1.2386274761411187e-07,
+        "Healthy": 8.581726262946177e-08,
+        "Oblique": 7.900061063992325e-06,
+        "Oblique Displaced": 6.50000288260344e-07,
+        "Spiral": 2.403045300525264e-07,
+        "Transverse": 2.3560225770324905e-07,
+        "Transverse Displaced": 3.1320320204031304e-07
+      },
+      "severity_type": "Comminuted"
+    },
+    "ensemble": {
+      "ensemble_prediction": "Comminuted",
+      "ensemble_confidence": 0.9999904632568359,
+      "individual_predictions": {
+        "swin": {
+          "class": "Comminuted",
+          "confidence": 0.9999904632568359
+        }
+      },
+      "fracture_detected": true,
+      "all_probabilities": {
+        "Comminuted": 0.9999904632568359,
+        "Greenstick": 1.2386274761411187e-07,
+        "Healthy": 8.581726262946177e-08,
+        "Oblique": 7.900061063992325e-06,
+        "Oblique Displaced": 6.50000288260344e-07,
+        "Spiral": 2.403045300525264e-07,
+        "Transverse": 2.3560225770324905e-07,
+        "Transverse Displaced": 3.1320320204031304e-07
+      },
+      "weighted_voting": false,
+      "weighting_reason": "Equal weights for all models"
+    }
+  },
+  {
+    "image": "test_images/Healthy_155_jpg.rf.036b4d8284616a7663c298c6893d9ebb_0003.jpg",
+    "diagnosis": {
+      "predicted_class": "Healthy",
+      "confidence_score": 0.9994341731071472,
+      "fracture_detected": false,
+      "all_probabilities": {
+        "Comminuted": 4.8785677790874615e-06,
+        "Greenstick": 5.940036498941481e-05,
+        "Healthy": 0.9994341731071472,
+        "Oblique": 1.252020183528657e-06,
+        "Oblique Displaced": 4.694568360719131e-06,
+        "Spiral": 5.196678216634609e-07,
+        "Transverse": 0.0004949018475599587,
+        "Transverse Displaced": 2.2888849571245373e-07
+      },
+      "severity_type": "Healthy"
+    },
+    "ensemble": {
+      "ensemble_prediction": "Healthy",
+      "ensemble_confidence": 0.9994341731071472,
+      "individual_predictions": {
+        "swin": {
+          "class": "Healthy",
+          "confidence": 0.9994341731071472
+        }
+      },
+      "fracture_detected": false,
+      "all_probabilities": {
+        "Comminuted": 4.8785677790874615e-06,
+        "Greenstick": 5.940036498941481e-05,
+        "Healthy": 0.9994341731071472,
+        "Oblique": 1.252020183528657e-06,
+        "Oblique Displaced": 4.694568360719131e-06,
+        "Spiral": 5.196678216634609e-07,
+        "Transverse": 0.0004949018475599587,
+        "Transverse Displaced": 2.2888849571245373e-07
+      },
+      "weighted_voting": false,
+      "weighting_reason": "Equal weights for all models"
+    }
+  },
+  {
+    "image": "test_images/Oblique_Displaced_51_jpg.rf.6163f82a04ac7d9d186954f7e45adb1b_0005.jpg",
+    "diagnosis": {
+      "predicted_class": "Oblique",
+      "confidence_score": 0.9999189376831055,
+      "fracture_detected": true,
+      "all_probabilities": {
+        "Comminuted": 1.161613818112528e-05,
+        "Greenstick": 1.9153608263877686e-06,
+        "Healthy": 1.3500743989425246e-07,
+        "Oblique": 0.9999189376831055,
+        "Oblique Displaced": 2.880548890971113e-05,
+        "Spiral": 4.323677785578184e-06,
+        "Transverse": 6.952896455914015e-06,
+        "Transverse Displaced": 2.734470763243735e-05
+      },
+      "severity_type": "Oblique"
+    },
+    "ensemble": {
+      "ensemble_prediction": "Oblique",
+      "ensemble_confidence": 0.9999189376831055,
+      "individual_predictions": {
+        "swin": {
+          "class": "Oblique",
+          "confidence": 0.9999189376831055
+        }
+      },
+      "fracture_detected": true,
+      "all_probabilities": {
+        "Comminuted": 1.161613818112528e-05,
+        "Greenstick": 1.9153608263877686e-06,
+        "Healthy": 1.3500743989425246e-07,
+        "Oblique": 0.9999189376831055,
+        "Oblique Displaced": 2.880548890971113e-05,
+        "Spiral": 4.323677785578184e-06,
+        "Transverse": 6.952896455914015e-06,
+        "Transverse Displaced": 2.734470763243735e-05
+      },
+      "weighted_voting": true,
+      "weighting_reason": "Hypercolumn models prioritized for Oblique"
+    }
+  },
+  {
+    "image": "test_images/Spiral_257_jpg.rf.3cc9912ab33e60062d99c277a5aa9bf7_0010.jpg",
+    "diagnosis": {
+      "predicted_class": "Spiral",
+      "confidence_score": 0.999961256980896,
+      "fracture_detected": true,
+      "all_probabilities": {
+        "Comminuted": 1.0242036978524993e-06,
+        "Greenstick": 2.4023627247515833e-06,
+        "Healthy": 4.3207711541981553e-07,
+        "Oblique": 4.205026016279589e-06,
+        "Oblique Displaced": 2.7126330678584054e-05,
+        "Spiral": 0.999961256980896,
+        "Transverse": 1.7814542161431746e-06,
+        "Transverse Displaced": 1.8062820572595228e-06
+      },
+      "severity_type": "Spiral"
+    },
+    "ensemble": {
+      "ensemble_prediction": "Spiral",
+      "ensemble_confidence": 0.999961256980896,
+      "individual_predictions": {
+        "swin": {
+          "class": "Spiral",
+          "confidence": 0.999961256980896
+        }
+      },
+      "fracture_detected": true,
+      "all_probabilities": {
+        "Comminuted": 1.0242036978524993e-06,
+        "Greenstick": 2.4023627247515833e-06,
+        "Healthy": 4.3207711541981553e-07,
+        "Oblique": 4.205026016279589e-06,
+        "Oblique Displaced": 2.7126330678584054e-05,
+        "Spiral": 0.999961256980896,
+        "Transverse": 1.7814542161431746e-06,
+        "Transverse Displaced": 1.8062820572595228e-06
+      },
+      "weighted_voting": false,
+      "weighting_reason": "Equal weights for all models"
+    }
+  },
+  {
+    "image": "test_images/Transverse_153_jpg.rf.08e1a53f8b4c40907f0f20362078debc_0007.jpg",
+    "diagnosis": {
+      "predicted_class": "Transverse Displaced",
+      "confidence_score": 0.9960702657699585,
+      "fracture_detected": true,
+      "all_probabilities": {
+        "Comminuted": 2.923677493527066e-05,
+        "Greenstick": 2.8490003387560137e-05,
+        "Healthy": 1.9210587197449058e-05,
+        "Oblique": 0.0008970708586275578,
+        "Oblique Displaced": 0.0006098466692492366,
+        "Spiral": 5.666567449225113e-05,
+        "Transverse": 0.00228920322842896,
+        "Transverse Displaced": 0.9960702657699585
+      },
+      "severity_type": "Transverse Displaced"
+    },
+    "ensemble": {
+      "ensemble_prediction": "Transverse Displaced",
+      "ensemble_confidence": 0.9960702657699585,
+      "individual_predictions": {
+        "swin": {
+          "class": "Transverse Displaced",
+          "confidence": 0.9960702657699585
+        }
+      },
+      "fracture_detected": true,
+      "all_probabilities": {
+        "Comminuted": 2.923677493527066e-05,
+        "Greenstick": 2.8490003387560137e-05,
+        "Healthy": 1.9210587197449058e-05,
+        "Oblique": 0.0008970708586275578,
+        "Oblique Displaced": 0.0006098466692492366,
+        "Spiral": 5.666567449225113e-05,
+        "Transverse": 0.00228920322842896,
+        "Transverse Displaced": 0.9960702657699585
+      },
+      "weighted_voting": true,
+      "weighting_reason": "Hypercolumn models prioritized for Transverse Displaced"
+    }
+  }
+]

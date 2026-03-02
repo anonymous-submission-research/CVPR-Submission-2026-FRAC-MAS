@@ -1,0 +1,11 @@
+{
+  "model_names": [
+    "maxvit",
+    "yolo",
+    "hypercolumn_cbam_densenet169",
+    "rad_dino"
+  ],
+  "best_weight": 1.5,
+  "best_acc": 0.9433962264150944,
+  "threshold": 0.5292484760284424
+}

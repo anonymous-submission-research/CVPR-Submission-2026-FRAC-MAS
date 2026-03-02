@@ -1,0 +1,971 @@
+{
+  "sampling_info": {
+    "dataset": "FracAtlas",
+    "subset": "hand",
+    "samples_per_class": 100,
+    "random_seed": 42,
+    "total_samples": 200,
+    "n_fractured": 100,
+    "n_non_fractured": 100,
+    "fractured_dir": "fracatlas/images/Fractured",
+    "non_fractured_dir": "fracatlas/images/Non_fractured",
+    "sampled_files": {
+      "Fractured": [
+        "IMG0000057.jpg",
+        "IMG0000188.jpg",
+        "IMG0000189.jpg",
+        "IMG0000206.jpg",
+        "IMG0000207.jpg",
+        "IMG0000352.jpg",
+        "IMG0000470.jpg",
+        "IMG0000804.jpg",
+        "IMG0000805.jpg",
+        "IMG0000851.jpg",
+        "IMG0001025.jpg",
+        "IMG0001073.jpg",
+        "IMG0001147.jpg",
+        "IMG0001151.jpg",
+        "IMG0001152.jpg",
+        "IMG0001360.jpg",
+        "IMG0001366.jpg",
+        "IMG0001411.jpg",
+        "IMG0001571.jpg",
+        "IMG0001639.jpg",
+        "IMG0001710.jpg",
+        "IMG0001739.jpg",
+        "IMG0001948.jpg",
+        "IMG0001970.jpg",
+        "IMG0002105.jpg",
+        "IMG0002127.jpg",
+        "IMG0002148.jpg",
+        "IMG0002181.jpg",
+        "IMG0002225.jpg",
+        "IMG0002272.jpg",
+        "IMG0002298.jpg",
+        "IMG0002312.jpg",
+        "IMG0002325.jpg",
+        "IMG0002326.jpg",
+        "IMG0002328.jpg",
+        "IMG0002330.jpg",
+        "IMG0002332.jpg",
+        "IMG0002350.jpg",
+        "IMG0002352.jpg",
+        "IMG0002386.jpg",
+        "IMG0002392.jpg",
+        "IMG0002394.jpg",
+        "IMG0002402.jpg",
+        "IMG0002408.jpg",
+        "IMG0002410.jpg",
+        "IMG0002411.jpg",
+        "IMG0002414.jpg",
+        "IMG0002420.jpg",
+        "IMG0002421.jpg",
+        "IMG0002478.jpg",
+        "IMG0002480.jpg",
+        "IMG0002495.jpg",
+        "IMG0002498.jpg",
+        "IMG0002501.jpg",
+        "IMG0002502.jpg",
+        "IMG0002560.jpg",
+        "IMG0002583.jpg",
+        "IMG0002584.jpg",
+        "IMG0002601.jpg",
+        "IMG0002604.jpg",
+        "IMG0002611.jpg",
+        "IMG0002653.jpg",
+        "IMG0002746.jpg",
+        "IMG0002809.jpg",
+        "IMG0002848.jpg",
+        "IMG0002849.jpg",
+        "IMG0002886.jpg",
+        "IMG0002979.jpg",
+        "IMG0003000.jpg",
+        "IMG0003070.jpg",
+        "IMG0003094.jpg",
+        "IMG0003112.jpg",
+        "IMG0003121.jpg",
+        "IMG0003199.jpg",
+        "IMG0003217.jpg",
+        "IMG0003234.jpg",
+        "IMG0003266.jpg",
+        "IMG0003298.jpg",
+        "IMG0003310.jpg",
+        "IMG0003312.jpg",
+        "IMG0003313.jpg",
+        "IMG0003394.jpg",
+        "IMG0003397.jpg",
+        "IMG0003420.jpg",
+        "IMG0003564.jpg",
+        "IMG0003586.jpg",
+        "IMG0003713.jpg",
+        "IMG0003733.jpg",
+        "IMG0003734.jpg",
+        "IMG0003810.jpg",
+        "IMG0003819.jpg",
+        "IMG0003906.jpg",
+        "IMG0004067.jpg",
+        "IMG0004071.jpg",
+        "IMG0004117.jpg",
+        "IMG0004207.jpg",
+        "IMG0004233.jpg",
+        "IMG0004262.jpg",
+        "IMG0004356.jpg",
+        "IMG0004370.jpg"
+      ],
+      "Non_fractured": [
+        "IMG0000007.jpg",
+        "IMG0000020.jpg",
+        "IMG0000046.jpg",
+        "IMG0000102.jpg",
+        "IMG0000165.jpg",
+        "IMG0000199.jpg",
+        "IMG0000336.jpg",
+        "IMG0000439.jpg",
+        "IMG0000523.jpg",
+        "IMG0000532.jpg",
+        "IMG0000536.jpg",
+        "IMG0000562.jpg",
+        "IMG0000563.jpg",
+        "IMG0000571.jpg",
+        "IMG0000577.jpg",
+        "IMG0000582.jpg",
+        "IMG0000598.jpg",
+        "IMG0000629.jpg",
+        "IMG0000696.jpg",
+        "IMG0000759.jpg",
+        "IMG0000847.jpg",
+        "IMG0000864.jpg",
+        "IMG0000883.jpg",
+        "IMG0000884.jpg",
+        "IMG0000891.jpg",
+        "IMG0000963.jpg",
+        "IMG0001005.jpg",
+        "IMG0001046.jpg",
+        "IMG0001110.jpg",
+        "IMG0001120.jpg",
+        "IMG0001138.jpg",
+        "IMG0001223.jpg",
+        "IMG0001252.jpg",
+        "IMG0001258.jpg",
+        "IMG0001278.jpg",
+        "IMG0001307.jpg",
+        "IMG0001389.jpg",
+        "IMG0001566.jpg",
+        "IMG0001588.jpg",
+        "IMG0001663.jpg",
+        "IMG0001668.jpg",
+        "IMG0001674.jpg",
+        "IMG0001711.jpg",
+        "IMG0001717.jpg",
+        "IMG0001749.jpg",
+        "IMG0001785.jpg",
+        "IMG0001786.jpg",
+        "IMG0001788.jpg",
+        "IMG0001901.jpg",
+        "IMG0001906.jpg",
+        "IMG0001923.jpg",
+        "IMG0001928.jpg",
+        "IMG0001953.jpg",
+        "IMG0002014.jpg",
+        "IMG0002034.jpg",
+        "IMG0002039.jpg",
+        "IMG0002069.jpg",
+        "IMG0002072.jpg",
+        "IMG0002242.jpg",
+        "IMG0002282.jpg",
+        "IMG0002669.jpg",
+        "IMG0002694.jpg",
+        "IMG0002717.jpg",
+        "IMG0002727.jpg",
+        "IMG0002835.jpg",
+        "IMG0002836.jpg",
+        "IMG0002951.jpg",
+        "IMG0002961.jpg",
+        "IMG0003097.jpg",
+        "IMG0003103.jpg",
+        "IMG0003156.jpg",
+        "IMG0003173.jpg",
+        "IMG0003225.jpg",
+        "IMG0003271.jpg",
+        "IMG0003334.jpg",
+        "IMG0003355.jpg",
+        "IMG0003376.jpg",
+        "IMG0003503.jpg",
+        "IMG0003511.jpg",
+        "IMG0003538.jpg",
+        "IMG0003579.jpg",
+        "IMG0003596.jpg",
+        "IMG0003656.jpg",
+        "IMG0003667.jpg",
+        "IMG0003705.jpg",
+        "IMG0003787.jpg",
+        "IMG0003835.jpg",
+        "IMG0003918.jpg",
+        "IMG0003931.jpg",
+        "IMG0003980.jpg",
+        "IMG0004004.jpg",
+        "IMG0004016.jpg",
+        "IMG0004105.jpg",
+        "IMG0004120.jpg",
+        "IMG0004201.jpg",
+        "IMG0004277.jpg",
+        "IMG0004280.jpg",
+        "IMG0004287.jpg",
+        "IMG0004296.jpg",
+        "IMG0004346.jpg"
+      ]
+    }
+  },
+  "results": [
+    {
+      "run_name": "MaxViT",
+      "description": "Individual model: MaxViT",
+      "default_metrics": {
+        "threshold": 0.5,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5025125628140703,
+        "precision": 0.5025125628140703,
+        "recall": 1.0,
+        "sensitivity": 1.0,
+        "f1": 0.6688963210702341,
+        "detection_rate": 1.0,
+        "mcc": 0.0,
+        "cohen_kappa": 0.0,
+        "tp": 100,
+        "tn": 0,
+        "fp": 99,
+        "fn": 0,
+        "specificity": 0.0,
+        "npv": null,
+        "auc": 0.46171717171717175,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 100,
+            "incorrect": 0,
+            "accuracy": 1.0
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 0,
+            "incorrect": 99,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "optimal_metrics": {
+        "threshold": 0.9996920010016765,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5276381909547738,
+        "precision": 0.65,
+        "recall": 0.13,
+        "sensitivity": 0.13,
+        "f1": 0.21666666666666667,
+        "detection_rate": 0.13,
+        "mcc": 0.09860047125419907,
+        "cohen_kappa": 0.059054325955734344,
+        "tp": 13,
+        "tn": 92,
+        "fp": 7,
+        "fn": 87,
+        "specificity": 0.9292929292929293,
+        "npv": 0.5139664804469274,
+        "auc": 0.46171717171717175,
+        "youden_j": 0.0592929292929293,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 13,
+            "incorrect": 87,
+            "accuracy": 0.13
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 92,
+            "incorrect": 7,
+            "accuracy": 0.9293
+          }
+        }
+      }
+    },
+    {
+      "run_name": "YOLO",
+      "description": "Individual model: YOLO",
+      "default_metrics": {
+        "threshold": 0.5,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.507537688442211,
+        "precision": 0.5050505050505051,
+        "recall": 1.0,
+        "sensitivity": 1.0,
+        "f1": 0.6711409395973155,
+        "detection_rate": 1.0,
+        "mcc": 0.07142492739258056,
+        "cohen_kappa": 0.010151253679829608,
+        "tp": 100,
+        "tn": 1,
+        "fp": 98,
+        "fn": 0,
+        "specificity": 0.010101010101010102,
+        "npv": 1.0,
+        "auc": 0.3935353535353535,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 100,
+            "incorrect": 0,
+            "accuracy": 1.0
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 1,
+            "incorrect": 98,
+            "accuracy": 0.0101
+          }
+        }
+      },
+      "optimal_metrics": {
+        "threshold": 0.9772147014737129,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5175879396984925,
+        "precision": 0.5106382978723404,
+        "recall": 0.96,
+        "sensitivity": 0.96,
+        "f1": 0.6666666666666666,
+        "detection_rate": 0.96,
+        "mcc": 0.06718629911418174,
+        "cohen_kappa": 0.030844155844155896,
+        "tp": 96,
+        "tn": 7,
+        "fp": 92,
+        "fn": 4,
+        "specificity": 0.0707070707070707,
+        "npv": 0.6363636363636364,
+        "auc": 0.3935353535353535,
+        "youden_j": 0.030707070707070683,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 96,
+            "incorrect": 4,
+            "accuracy": 0.96
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 7,
+            "incorrect": 92,
+            "accuracy": 0.0707
+          }
+        }
+      }
+    },
+    {
+      "run_name": "HyperColumn-CBAM-DenseNet169",
+      "description": "Individual model: HyperColumn-CBAM-DenseNet169",
+      "default_metrics": {
+        "threshold": 0.5,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5025125628140703,
+        "precision": 0.5025125628140703,
+        "recall": 1.0,
+        "sensitivity": 1.0,
+        "f1": 0.6688963210702341,
+        "detection_rate": 1.0,
+        "mcc": 0.0,
+        "cohen_kappa": 0.0,
+        "tp": 100,
+        "tn": 0,
+        "fp": 99,
+        "fn": 0,
+        "specificity": 0.0,
+        "npv": null,
+        "auc": 0.5671717171717172,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 100,
+            "incorrect": 0,
+            "accuracy": 1.0
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 0,
+            "incorrect": 99,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "optimal_metrics": {
+        "threshold": 0.9944247789680958,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.592964824120603,
+        "precision": 0.6862745098039216,
+        "recall": 0.35,
+        "sensitivity": 0.35,
+        "f1": 0.46357615894039733,
+        "detection_rate": 0.35,
+        "mcc": 0.21574726210477072,
+        "cohen_kappa": 0.1879187868406469,
+        "tp": 35,
+        "tn": 83,
+        "fp": 16,
+        "fn": 65,
+        "specificity": 0.8383838383838383,
+        "npv": 0.5608108108108109,
+        "auc": 0.5671717171717172,
+        "youden_j": 0.18838383838383835,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 35,
+            "incorrect": 65,
+            "accuracy": 0.35
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 83,
+            "incorrect": 16,
+            "accuracy": 0.8384
+          }
+        }
+      }
+    },
+    {
+      "run_name": "RAD-DINO",
+      "description": "Individual model: RAD-DINO",
+      "default_metrics": {
+        "threshold": 0.5,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5025125628140703,
+        "precision": 0.5025125628140703,
+        "recall": 1.0,
+        "sensitivity": 1.0,
+        "f1": 0.6688963210702341,
+        "detection_rate": 1.0,
+        "mcc": 0.0,
+        "cohen_kappa": 0.0,
+        "tp": 100,
+        "tn": 0,
+        "fp": 99,
+        "fn": 0,
+        "specificity": 0.0,
+        "npv": null,
+        "auc": 0.5374747474747475,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 100,
+            "incorrect": 0,
+            "accuracy": 1.0
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 0,
+            "incorrect": 99,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "optimal_metrics": {
+        "threshold": 0.9490512646734715,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.542713567839196,
+        "precision": 0.5494505494505495,
+        "recall": 0.5,
+        "sensitivity": 0.5,
+        "f1": 0.5235602094240838,
+        "detection_rate": 0.5,
+        "mcc": 0.08617251226549168,
+        "cohen_kappa": 0.08581957695996778,
+        "tp": 50,
+        "tn": 58,
+        "fp": 41,
+        "fn": 50,
+        "specificity": 0.5858585858585859,
+        "npv": 0.5370370370370371,
+        "auc": 0.5374747474747475,
+        "youden_j": 0.08585858585858586,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 50,
+            "incorrect": 50,
+            "accuracy": 0.5
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 58,
+            "incorrect": 41,
+            "accuracy": 0.5859
+          }
+        }
+      }
+    },
+    {
+      "run_name": "Ensemble (Weighted Avg)",
+      "description": "Full 4-model ensemble with weighted-average strategy",
+      "default_metrics": {
+        "threshold": 0.5,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5025125628140703,
+        "precision": 0.5025125628140703,
+        "recall": 1.0,
+        "sensitivity": 1.0,
+        "f1": 0.6688963210702341,
+        "detection_rate": 1.0,
+        "mcc": 0.0,
+        "cohen_kappa": 0.0,
+        "tp": 100,
+        "tn": 0,
+        "fp": 99,
+        "fn": 0,
+        "specificity": 0.0,
+        "npv": null,
+        "auc": 0.526969696969697,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 100,
+            "incorrect": 0,
+            "accuracy": 1.0
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 0,
+            "incorrect": 99,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "optimal_metrics": {
+        "threshold": 0.9844922407937702,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5477386934673367,
+        "precision": 0.5892857142857143,
+        "recall": 0.33,
+        "sensitivity": 0.33,
+        "f1": 0.4230769230769231,
+        "detection_rate": 0.33,
+        "mcc": 0.10860425594110376,
+        "cohen_kappa": 0.0974601894779279,
+        "tp": 33,
+        "tn": 76,
+        "fp": 23,
+        "fn": 67,
+        "specificity": 0.7676767676767676,
+        "npv": 0.5314685314685315,
+        "auc": 0.526969696969697,
+        "youden_j": 0.0976767676767677,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 33,
+            "incorrect": 67,
+            "accuracy": 0.33
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 76,
+            "incorrect": 23,
+            "accuracy": 0.7677
+          }
+        }
+      }
+    },
+    {
+      "run_name": "Ensemble (Stacking)",
+      "description": "Full 4-model ensemble with stacking meta-classifier",
+      "default_metrics": {
+        "threshold": 0.5,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5025125628140703,
+        "precision": 0.5025125628140703,
+        "recall": 1.0,
+        "sensitivity": 1.0,
+        "f1": 0.6688963210702341,
+        "detection_rate": 1.0,
+        "mcc": 0.0,
+        "cohen_kappa": 0.0,
+        "tp": 100,
+        "tn": 0,
+        "fp": 99,
+        "fn": 0,
+        "specificity": 0.0,
+        "npv": null,
+        "auc": 0.4414141414141414,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 100,
+            "incorrect": 0,
+            "accuracy": 1.0
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 0,
+            "incorrect": 99,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "optimal_metrics": {
+        "threshold": 0.9318710748242207,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5125628140703518,
+        "precision": 0.5517241379310345,
+        "recall": 0.16,
+        "sensitivity": 0.16,
+        "f1": 0.24806201550387597,
+        "detection_rate": 0.16,
+        "mcc": 0.04065156625718639,
+        "cohen_kappa": 0.02858436918121887,
+        "tp": 16,
+        "tn": 86,
+        "fp": 13,
+        "fn": 84,
+        "specificity": 0.8686868686868687,
+        "npv": 0.5058823529411764,
+        "auc": 0.4414141414141414,
+        "youden_j": 0.028686868686868677,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 16,
+            "incorrect": 84,
+            "accuracy": 0.16
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 86,
+            "incorrect": 13,
+            "accuracy": 0.8687
+          }
+        }
+      }
+    },
+    {
+      "run_name": "Triplet (w/o MaxViT)",
+      "description": "3-model ensemble: YOLO, HyperColumn-CBAM-DenseNet169, RAD-DINO (weighted avg)",
+      "default_metrics": {
+        "threshold": 0.5,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5025125628140703,
+        "precision": 0.5025125628140703,
+        "recall": 1.0,
+        "sensitivity": 1.0,
+        "f1": 0.6688963210702341,
+        "detection_rate": 1.0,
+        "mcc": 0.0,
+        "cohen_kappa": 0.0,
+        "tp": 100,
+        "tn": 0,
+        "fp": 99,
+        "fn": 0,
+        "specificity": 0.0,
+        "npv": null,
+        "auc": 0.5322222222222223,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 100,
+            "incorrect": 0,
+            "accuracy": 1.0
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 0,
+            "incorrect": 99,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "optimal_metrics": {
+        "threshold": 0.9814571671013255,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5527638190954773,
+        "precision": 0.6,
+        "recall": 0.33,
+        "sensitivity": 0.33,
+        "f1": 0.4258064516129032,
+        "detection_rate": 0.33,
+        "mcc": 0.12049921878748868,
+        "cohen_kappa": 0.10753338372385979,
+        "tp": 33,
+        "tn": 77,
+        "fp": 22,
+        "fn": 67,
+        "specificity": 0.7777777777777778,
+        "npv": 0.5347222222222222,
+        "auc": 0.5322222222222223,
+        "youden_j": 0.1077777777777778,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 33,
+            "incorrect": 67,
+            "accuracy": 0.33
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 77,
+            "incorrect": 22,
+            "accuracy": 0.7778
+          }
+        }
+      }
+    },
+    {
+      "run_name": "Triplet (w/o YOLO)",
+      "description": "3-model ensemble: MaxViT, HyperColumn-CBAM-DenseNet169, RAD-DINO (weighted avg)",
+      "default_metrics": {
+        "threshold": 0.5,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5025125628140703,
+        "precision": 0.5025125628140703,
+        "recall": 1.0,
+        "sensitivity": 1.0,
+        "f1": 0.6688963210702341,
+        "detection_rate": 1.0,
+        "mcc": 0.0,
+        "cohen_kappa": 0.0,
+        "tp": 100,
+        "tn": 0,
+        "fp": 99,
+        "fn": 0,
+        "specificity": 0.0,
+        "npv": null,
+        "auc": 0.5349494949494951,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 100,
+            "incorrect": 0,
+            "accuracy": 1.0
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 0,
+            "incorrect": 99,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "optimal_metrics": {
+        "threshold": 0.9793862455214063,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5477386934673367,
+        "precision": 0.5833333333333334,
+        "recall": 0.35,
+        "sensitivity": 0.35,
+        "f1": 0.4375,
+        "detection_rate": 0.35,
+        "mcc": 0.10620053161469373,
+        "cohen_kappa": 0.09727822580645151,
+        "tp": 35,
+        "tn": 74,
+        "fp": 25,
+        "fn": 65,
+        "specificity": 0.7474747474747475,
+        "npv": 0.5323741007194245,
+        "auc": 0.5349494949494951,
+        "youden_j": 0.09747474747474744,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 35,
+            "incorrect": 65,
+            "accuracy": 0.35
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 74,
+            "incorrect": 25,
+            "accuracy": 0.7475
+          }
+        }
+      }
+    },
+    {
+      "run_name": "Triplet (w/o HyperColumn-CBAM-DenseNet169)",
+      "description": "3-model ensemble: MaxViT, YOLO, RAD-DINO (weighted avg)",
+      "default_metrics": {
+        "threshold": 0.5,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5025125628140703,
+        "precision": 0.5025125628140703,
+        "recall": 1.0,
+        "sensitivity": 1.0,
+        "f1": 0.6688963210702341,
+        "detection_rate": 1.0,
+        "mcc": 0.0,
+        "cohen_kappa": 0.0,
+        "tp": 100,
+        "tn": 0,
+        "fp": 99,
+        "fn": 0,
+        "specificity": 0.0,
+        "npv": null,
+        "auc": 0.5132323232323233,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 100,
+            "incorrect": 0,
+            "accuracy": 1.0
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 0,
+            "incorrect": 99,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "optimal_metrics": {
+        "threshold": 0.9809489672382673,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5376884422110553,
+        "precision": 0.5476190476190477,
+        "recall": 0.46,
+        "sensitivity": 0.46,
+        "f1": 0.5,
+        "detection_rate": 0.46,
+        "mcc": 0.07710191863857434,
+        "cohen_kappa": 0.07610012111425102,
+        "tp": 46,
+        "tn": 61,
+        "fp": 38,
+        "fn": 54,
+        "specificity": 0.6161616161616161,
+        "npv": 0.5304347826086957,
+        "auc": 0.5132323232323233,
+        "youden_j": 0.07616161616161621,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 46,
+            "incorrect": 54,
+            "accuracy": 0.46
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 61,
+            "incorrect": 38,
+            "accuracy": 0.6162
+          }
+        }
+      }
+    },
+    {
+      "run_name": "Triplet (w/o RAD-DINO)",
+      "description": "3-model ensemble: MaxViT, YOLO, HyperColumn-CBAM-DenseNet169 (weighted avg)",
+      "default_metrics": {
+        "threshold": 0.5,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5025125628140703,
+        "precision": 0.5025125628140703,
+        "recall": 1.0,
+        "sensitivity": 1.0,
+        "f1": 0.6688963210702341,
+        "detection_rate": 1.0,
+        "mcc": 0.0,
+        "cohen_kappa": 0.0,
+        "tp": 100,
+        "tn": 0,
+        "fp": 99,
+        "fn": 0,
+        "specificity": 0.0,
+        "npv": null,
+        "auc": 0.5235353535353536,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 100,
+            "incorrect": 0,
+            "accuracy": 1.0
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 0,
+            "incorrect": 99,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "optimal_metrics": {
+        "threshold": 0.9856361378915608,
+        "n_samples": 199,
+        "n_positive": 100,
+        "n_negative": 99,
+        "accuracy": 0.5577889447236181,
+        "precision": 0.538961038961039,
+        "recall": 0.83,
+        "sensitivity": 0.83,
+        "f1": 0.6535433070866141,
+        "detection_rate": 0.83,
+        "mcc": 0.13485559157843613,
+        "cohen_kappa": 0.11313683784057527,
+        "tp": 83,
+        "tn": 28,
+        "fp": 71,
+        "fn": 17,
+        "specificity": 0.2828282828282828,
+        "npv": 0.6222222222222222,
+        "auc": 0.5235353535353536,
+        "youden_j": 0.11282828282828283,
+        "per_class": {
+          "Fractured": {
+            "total": 100,
+            "correct": 83,
+            "incorrect": 17,
+            "accuracy": 0.83
+          },
+          "Non_fractured": {
+            "total": 99,
+            "correct": 28,
+            "incorrect": 71,
+            "accuracy": 0.2828
+          }
+        }
+      }
+    }
+  ]
+}

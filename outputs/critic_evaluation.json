@@ -1,0 +1,2166 @@
+{
+  "metrics": {
+    "total_samples": 112,
+    "raw_ensemble_accuracy": 0.8928571428571429,
+    "post_critic_accuracy": 0.9456521739130435,
+    "safety_margin": 0.052795031055900554,
+    "n_confirmed": 92,
+    "n_rejected": 0,
+    "n_uncertain": 20,
+    "true_rejection_rate": 0.0,
+    "false_rejection_rate": 0.0,
+    "uncertainty_rate": 0.17857142857142858,
+    "rejected_error_rate": 0.0,
+    "n_correct": 100,
+    "n_wrong": 12,
+    "n_wrong_rejected": 0,
+    "n_correct_rejected": 0,
+    "n_confirmed_correct": 87
+  },
+  "mode": "hf_spaces",
+  "models": [
+    "maxvit",
+    "yolo",
+    "hypercolumn_cbam_densenet169",
+    "rad_dino"
+  ],
+  "hyper_weight": 1.5,
+  "per_sample": [
+    {
+      "index": 0,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_14_mri_0_3560_jpeg.rf.e372b7da8056e71c04033325ac9d3a9d_0006.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9890583753585815,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.95}\n\nStep 2:\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a vertebral body with multiple fracture fragments, indicating comminution.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9867977886460721,
+      "ensemble_top_confidence": 0.9890583753585815
+    },
+    {
+      "index": 1,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_14_mri_0_1114_jpeg.rf.686042caca2d9b59e1d22d77d5ba1c53_0016.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9456907510757446,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Comminuted\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a vertebral body with multiple fracture fragments, indicating comminution.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9319480713456869,
+      "ensemble_top_confidence": 0.9456907510757446
+    },
+    {
+      "index": 2,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_9_mri_0_4852_jpeg.rf.8561f2e572798f558011be3faa0de57d_0003.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9747892618179321,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.95}\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a vertebral body with multiple bony fragments, suggesting a comminuted fracture.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9691529329866171,
+      "ensemble_top_confidence": 0.9747892618179321
+    },
+    {
+      "index": 3,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_9_mri_0_5978_jpeg.rf.f44ee7f2fdc1c1a2670d30ec7c1a66fd_0014.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9590466022491455,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows multiple distinct fragments of bone, suggesting a comminuted fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9509643511846662,
+      "ensemble_top_confidence": 0.9590466022491455
+    },
+    {
+      "index": 4,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_7_mri_0_2539_jpeg.rf.346a73857cb2460bb32b2cd3e421eb2a_0000.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9881765246391296,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Comminuted\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image appears to show multiple fragments of bone in the vertebral body. This suggests a comminuted fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9858681228943169,
+      "ensemble_top_confidence": 0.9881765246391296
+    },
+    {
+      "index": 5,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_25_mri_0_1294_jpeg.rf.ab91f0f410e47824739742c6170b9717_0010.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.914465069770813,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.95}\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a fracture of the proximal humerus, and the bone appears to be broken into multiple fragments, which is characteristic of a comminuted fracture.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.8752939850091934,
+      "ensemble_top_confidence": 0.914465069770813
+    },
+    {
+      "index": 6,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_9_mri_0_3821_jpeg.rf.631a24c0fd00947f59e02b981bc9d6aa_0013.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.983496904373169,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Comminuted\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.95,\n  \"explanation\": \"The image shows a vertebra with a clear disruption in its vertebral body, with evidence of multiple fragments. This strongly suggests a comminuted fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9776413859799504,
+      "ensemble_top_confidence": 0.983496904373169
+    },
+    {
+      "index": 7,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_13_mri_0_7810_jpeg.rf.25bdc0f6080fc0122f129e36cc19fca2_0011.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.8736399412155151,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.85}\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows multiple, small fragments of the vertebral body, strongly suggesting a comminuted fracture.\"}",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.8141523227095604,
+      "ensemble_top_confidence": 0.8736399412155151
+    },
+    {
+      "index": 8,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_30_mri_jpg.rf.72cc2c5d5396c161ad5fecc1969844b5_0009.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9253497123718262,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a fracture of the humeral head, with multiple fragments present, indicating comminution.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.8919658288359642,
+      "ensemble_top_confidence": 0.9253497123718262
+    },
+    {
+      "index": 9,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_20_jpg.rf.fb28bf2b4cf30312246205d5e27dbc4d_0015.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9600763320922852,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image clearly shows a fracture with multiple fragments, consistent with the definition of a comminuted fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9492087187245488,
+      "ensemble_top_confidence": 0.9600763320922852
+    },
+    {
+      "index": 10,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_33_jpg.rf.2b244a108121167e42a7ad1ced5b5fbf_0008.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.7476258873939514,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Comminuted\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.98,\n  \"explanation\": \"The image shows multiple fragments, indicating a comminuted fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.6583975106477737,
+      "ensemble_top_confidence": 0.7476258873939514
+    },
+    {
+      "index": 11,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_7_mri_0_5567_jpeg.rf.02a1bcb53a33005e150fc42fa0e16993_0004.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9766159057617188,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's my analysis:\n\n**Step 1: Top Diagnosis**\n\nBased on the image, the most likely diagnosis is **\"Comminuted\"**.\n\n```json\n{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.95}\n```\n\n**Step 2: Visual Features of Comminuted**\n\nThe image shows a vertebral body with multiple fragments, which aligns with the definition of a comminuted fracture.\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image demonstrates multiple fragments within the vertebral body, indicating a comminuted fracture.\"}\n```\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.968496834859252,
+      "ensemble_top_confidence": 0.9766159057617188
+    },
+    {
+      "index": 12,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_7_mri_0_5567_jpeg.rf.fa100ea8616b7c6439100eddcefa2a88_0001.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9897422790527344,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.95}\n\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows multiple fragments of bone, suggesting a comminuted fracture.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9877273968886584,
+      "ensemble_top_confidence": 0.9897422790527344
+    },
+    {
+      "index": 13,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_7_mri_0_345_jpeg.rf.f1df2eedc63b21e070ac916d47671c33_0012.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9592092037200928,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.85}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows multiple fragments of bone, consistent with the definition of a comminuted fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9486295748502016,
+      "ensemble_top_confidence": 0.9592092037200928
+    },
+    {
+      "index": 14,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_9_mri_0_7771_jpeg.rf.99d815f01f31f07ec2cdfb4c307d199a_0007.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.984440267086029,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.85}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows multiple fragments of bone, which is the defining characteristic of a comminuted fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9812048042658716,
+      "ensemble_top_confidence": 0.984440267086029
+    },
+    {
+      "index": 15,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_19_jpg.rf.499fe59e7b7528fdb7db7d9248de648f_0002.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.989881694316864,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Comminuted\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows multiple fragments of bone, indicative of a comminuted fracture. The distal radius and carpals are particularly well visualized, showing multiple break lines.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9868005097378045,
+      "ensemble_top_confidence": 0.989881694316864
+    },
+    {
+      "index": 16,
+      "image": "balanced_augmented_dataset/test/Comminuted/Comminuted_161_jpg.rf.7530f2569a447643e24f85543a51c992_0005.jpg",
+      "true_class": "Comminuted",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.9942194819450378,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Comminuted\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows multiple fragments of the bone, indicating comminution. These fragments are apparent in the distal radius and ulna.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.9915756622795016,
+      "ensemble_top_confidence": 0.9942194819450378
+    },
+    {
+      "index": 17,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_37_jpg.rf.a78a43225dc820eff125520d5372bc20_0002.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.9610671997070312,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's the analysis:\n\nStep 1:\n\nBased on the image, the most likely diagnosis is **Greenstick**. The bone appears to be bent, with a possible incomplete fracture.\n\n```json\n{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.85}\n```\n\nStep 2:\n\nThe image shows a clearly bent radius bone, suggesting a greenstick fracture.\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image clearly demonstrates the visual features of a greenstick fracture, with a bent radius bone indicative of an incomplete fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.9466448007151484,
+      "ensemble_top_confidence": 0.9610671997070312
+    },
+    {
+      "index": 18,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_13_mri_0_5388_jpeg.rf.d1d46273fa017058bcc9f46082f918b9_0012.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.5819921493530273,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a vertebral body with a noticeable bend in one of the cortices, which is characteristic of a greenstick fracture. The other cortex appears intact.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.20962601900100708,
+      "ensemble_top_confidence": 0.5819921493530273
+    },
+    {
+      "index": 19,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_195_jpg.rf.e9496cec92ac126c6b691a0989754f6c_0001.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.9620807766914368,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a linear radiolucency with a cortical buckle, which is characteristic of a greenstick fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.9382609520107508,
+      "ensemble_top_confidence": 0.9620807766914368
+    },
+    {
+      "index": 20,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_34_jpg.rf.3ef1ca4e5c71b092faf4cd630f6052ca_0009.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.9442694783210754,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows a likely greenstick fracture in the distal radius. The cortex is bent, suggesting an incomplete fracture, and the fracture line is not fully complete, as expected in a greenstick fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.911153506487608,
+      "ensemble_top_confidence": 0.9442694783210754
+    },
+    {
+      "index": 21,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_13_jpg.rf.5c601aab5d4653d2b7c40c80de3429cf_0003.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.9974017143249512,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a distal radius fracture with a characteristic crescent-shaped lucency, indicating a Greenstick fracture. The cortex is bent, and one side is broken while the other is relatively intact.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.9965123512665741,
+      "ensemble_top_confidence": 0.9974017143249512
+    },
+    {
+      "index": 22,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_37_jpg.rf.b3441bfc678fb72e32b1adbc1ae483c5_0011.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.8916205167770386,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's the analysis:\n\nStep 1:\n\nThe image shows a fracture of the distal radius. The cortex is fractured, and the other cortex is bent. This is consistent with a Greenstick fracture.\n\n```json\n{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n\nYes, the image effectively demonstrates the visual features of a Greenstick fracture.\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a fracture where one cortex is broken, and the other cortex is bent, which is a classic presentation of a Greenstick fracture, particularly in children.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.8227115944027901,
+      "ensemble_top_confidence": 0.8916205167770386
+    },
+    {
+      "index": 23,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_34_jpg.rf.039da29095778584305f6b7d0c3b7156_0000.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.9910081624984741,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1: The image shows a fracture of the distal radius with a bowing of the cortex, and it appears to be a greenstick fracture.\n\n```json\n{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n```\n\nStep 2: Yes\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.99, \"explanation\": \"The image shows a bowing of the radius cortex, which is a characteristic feature of a greenstick fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.9891022238880396,
+      "ensemble_top_confidence": 0.9910081624984741
+    },
+    {
+      "index": 24,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_165_jpg.rf.85137a95a445a8763a186c8f5a311a0d_0007.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.9837321639060974,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image clearly shows a greenstick fracture, with a bent cortex and a broken cortex. The displacement is minimal.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.9766829563304782,
+      "ensemble_top_confidence": 0.9837321639060974
+    },
+    {
+      "index": 25,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_6_jpg.rf.0e4e8ac267e8c1c2b2b48ad8b5bf0787_0004.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.9112109541893005,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a fracture of the distal tibia with an obvious crescent-shaped fracture line, which is characteristic of a Greenstick fracture.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.8813312966376543,
+      "ensemble_top_confidence": 0.9112109541893005
+    },
+    {
+      "index": 26,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_37_jpg.rf.7805b2f6f04a2b535228ca25cbcad7a1_0006.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.9788288474082947,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's the breakdown of my assessment:\n\n**Step 1:**\n\nBased on the provided image, the most likely diagnosis is **Greenstick**. This is because the distal radius appears to have a characteristic bend/buckle, suggesting an incomplete fracture.\n\n```json\n{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n```\n\n**Step 2:**\n\nThe image *does* effectively demonstrate the visual features of \"Greenstick\". It shows the characteristic bend of the distal radius.\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image clearly shows a bend/buckle of the distal radius, which is the key feature of a greenstick fracture.\"}\n```\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.9715508865192533,
+      "ensemble_top_confidence": 0.9788288474082947
+    },
+    {
+      "index": 27,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_6_jpg.rf.ba178aab101a3d3113e731e7bb5302a8_0010.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.986744225025177,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a fracture line with a bend in the bone, which is indicative of a greenstick fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.97983618080616,
+      "ensemble_top_confidence": 0.986744225025177
+    },
+    {
+      "index": 28,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_37_jpg.rf.d7003325f978638785584d992d1a3e12_0008.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.9905616641044617,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n{\"top_diagnosis\": \"Greenstick\", \"top_confidence\": 0.95}\n\nStep 2:\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a fracture of the distal radius, with a clear bending of the cortex. This is consistent with a greenstick fracture, typical of children. The fracture is also incomplete, with a portion of the cortex remaining intact.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.9869659368414432,
+      "ensemble_top_confidence": 0.9905616641044617
+    },
+    {
+      "index": 29,
+      "image": "balanced_augmented_dataset/test/Greenstick/Greenstick_37_jpg.rf.6bdd97ba25ad2526cbf917d61b69dbc0_0005.jpg",
+      "true_class": "Greenstick",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.9801640510559082,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Greenstick\",\n  \"top_confidence\": 0.85\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a fracture of the distal radius with a characteristic greenstick appearance, where the cortex is broken but the bone is still bent. This is consistent with the definition of a greenstick fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.9716353164985776,
+      "ensemble_top_confidence": 0.9801640510559082
+    },
+    {
+      "index": 30,
+      "image": "balanced_augmented_dataset/test/Healthy/Healthy_169_jpg.rf.5d9a846ac9a42458ff8fd20213fb43b3_0008.jpg",
+      "true_class": "Healthy",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.995843231678009,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Healthy\",\n  \"top_confidence\": 0.99\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.99,\n  \"explanation\": \"The image shows normal bony structures without any obvious fractures, dislocations, or other abnormalities.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.9947663408238441,
+      "ensemble_top_confidence": 0.995843231678009
+    },
+    {
+      "index": 31,
+      "image": "balanced_augmented_dataset/test/Healthy/Healthy_80_jpg.rf.22167e2817664d636575c42b2293da76_0007.jpg",
+      "true_class": "Healthy",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.995008647441864,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Healthy\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a clear view of the bones of the hand and wrist, and there is no obvious evidence of fracture, dislocation, or other acute injury.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.9936577428597957,
+      "ensemble_top_confidence": 0.995008647441864
+    },
+    {
+      "index": 32,
+      "image": "balanced_augmented_dataset/test/Healthy/Healthy_185_jpg.rf.a634b8e07dcd2312026863d4c1973555_0005.jpg",
+      "true_class": "Healthy",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.9909073114395142,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Healthy\", \"top_confidence\": 0.95}\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows the bones of the hand and wrist, which are normal in appearance and without any obvious fractures.\"}",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.985122921410948,
+      "ensemble_top_confidence": 0.9909073114395142
+    },
+    {
+      "index": 33,
+      "image": "balanced_augmented_dataset/test/Healthy/Healthy_37_jpg.rf.6d32809d381b7e70313272f30ccf628f_0002.jpg",
+      "true_class": "Healthy",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.9650869369506836,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's the analysis:\n\nStep 1: The image shows a lateral view of the forearm. There is no obvious fracture line or abnormal lucency. The bones appear intact.\n\n```json\n{\"top_diagnosis\": \"Healthy\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows no signs of fracture, which aligns with the definition of a healthy bone.\"}\n```\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.942451873794198,
+      "ensemble_top_confidence": 0.9650869369506836
+    },
+    {
+      "index": 34,
+      "image": "balanced_augmented_dataset/test/Healthy/Healthy_185_jpg.rf.35a2b6c8407f9c5414c3a7a482b33181_0001.jpg",
+      "true_class": "Healthy",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.9749860167503357,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Healthy\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.99, \"explanation\": \"The image shows a plain radiograph of the forearm. There is no obvious fracture line or cortical disruption to suggest a fracture, and the bones appear intact. The definition of 'Healthy' is satisfied.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.9575849212706089,
+      "ensemble_top_confidence": 0.9749860167503357
+    },
+    {
+      "index": 35,
+      "image": "balanced_augmented_dataset/test/Healthy/Healthy_109_jpg.rf.3880b7a7846bfc5ad2eb808e540de176_0000.jpg",
+      "true_class": "Healthy",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.7903552651405334,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n{\"top_diagnosis\": \"Healthy\", \"top_confidence\": 0.95}\n\nStep 2:\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a clear radiograph of the hand and wrist, with no visible evidence of fractures, dislocations, or other bone abnormalities.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.6426656246185303,
+      "ensemble_top_confidence": 0.7903552651405334
+    },
+    {
+      "index": 36,
+      "image": "balanced_augmented_dataset/test/Healthy/Healthy_37_jpg.rf.0bc6636b6eb3b432470b3a7620a3b5a8_0009.jpg",
+      "true_class": "Healthy",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.9478596448898315,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Healthy\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.99, \"explanation\": \"The image shows the bones of the forearm and wrist, without any obvious signs of fracture such as discontinuity of the cortex, cortical depression, or displacement of bony fragments.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.9145773313939571,
+      "ensemble_top_confidence": 0.9478596448898315
+    },
+    {
+      "index": 37,
+      "image": "balanced_augmented_dataset/test/Healthy/Healthy_11_jpg.rf.da49d6c86bbc24aee81fde4c3c98a625_0004.jpg",
+      "true_class": "Healthy",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.9295719861984253,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1: The image shows a hand radiograph. There is no obvious evidence of a fracture, so my top diagnosis is \"Healthy\".\n```json\n{\"top_diagnosis\": \"Healthy\", \"top_confidence\": 0.95}\n```\nStep 2: Yes, the image effectively demonstrates the visual features of 'Healthy'.\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a hand radiograph with no obvious signs of fracture, which aligns with the definition of 'Healthy'.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.9034317154437304,
+      "ensemble_top_confidence": 0.9295719861984253
+    },
+    {
+      "index": 38,
+      "image": "balanced_augmented_dataset/test/Healthy/Healthy_37_jpg.rf.f59f94d2954ac50740cc21318b7e08ee_0006.jpg",
+      "true_class": "Healthy",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.9576159715652466,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Healthy\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows bones with no obvious signs of fracture, displacement, or abnormal alignment.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.9270589780062437,
+      "ensemble_top_confidence": 0.9576159715652466
+    },
+    {
+      "index": 39,
+      "image": "balanced_augmented_dataset/test/Healthy/Healthy_155_jpg.rf.036b4d8284616a7663c298c6893d9ebb_0003.jpg",
+      "true_class": "Healthy",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.9925683736801147,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Healthy\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a clear visualization of the bones of the forearm and wrist. There are no obvious signs of fracture, displacement, or other abnormalities that would suggest a different diagnosis. Therefore, the image effectively demonstrates the visual features of 'Healthy'.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.9892920483835042,
+      "ensemble_top_confidence": 0.9925683736801147
+    },
+    {
+      "index": 40,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_52_jpg.rf.820332e1fecaaa6f3b4f627380098c96_0010.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.4805096685886383,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.8}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image clearly shows a fracture line that is not straight and not in a standard transverse direction. This is consistent with an oblique fracture pattern.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.2896762192249298,
+      "ensemble_top_confidence": 0.4805096685886383
+    },
+    {
+      "index": 41,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_134_jpg.rf.afc3aa7bb9317657032c1dd9ad21bb58_0001.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.7495626211166382,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a fracture that appears to be approximately perpendicular to the long axis of the radius. The white arrows indicate the fracture lines, and the black arrowhead points to the location of the fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.5312591791152954,
+      "ensemble_top_confidence": 0.7495626211166382
+    },
+    {
+      "index": 42,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_97_jpg.rf.6fa1275bfbe9a10964859947ff34aa27_0009.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.7281150221824646,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n\n```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.85}\n```\n\nStep 2:\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows a distinct curvilinear fracture line, which is characteristic of an oblique fracture. The fracture line appears to deviate from the normal bone alignment.\"}\n```\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.5036528706550598,
+      "ensemble_top_confidence": 0.7281150221824646
+    },
+    {
+      "index": 43,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_26_jpg.rf.9fd8e961b12f19ff793e75331f9b7753_0004.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.3930761218070984,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image clearly shows a fracture line that appears to be approximately perpendicular to the long axis of the humerus. The fracture is displaced.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse",
+        "Oblique"
+      ],
+      "ensemble_margin": 0.04687729477882385,
+      "ensemble_top_confidence": 0.3930761218070984
+    },
+    {
+      "index": 44,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_16_jpg.rf.58205b8491b7ddc98278f4a39eb42bd4_0003.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.7605491280555725,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.8}\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a fracture line that appears to be angled or oblique, consistent with an oblique fracture. The fracture line is not clearly transverse or spiral.\"}",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.5379541665315628,
+      "ensemble_top_confidence": 0.7605491280555725
+    },
+    {
+      "index": 45,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_52_jpg.rf.19ca51e05ef80f6e534a232fb6d9f2f7_0002.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.6680063009262085,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.9}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image clearly shows a fracture line angled from distal to proximal, which is characteristic of an oblique fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.47614698112010956,
+      "ensemble_top_confidence": 0.6680063009262085
+    },
+    {
+      "index": 46,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_126_jpg.rf.0817bf53fcdec596783e0c6dcc5d7d50_0007.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.4392396807670593,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.8}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a subtle fracture line that deviates from the normal bone alignment, consistent with an oblique fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Oblique",
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.20530830323696136,
+      "ensemble_top_confidence": 0.4392396807670593
+    },
+    {
+      "index": 47,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_51_jpg.rf.6163f82a04ac7d9d186954f7e45adb1b_0005.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.7246054410934448,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\nThe image shows a lateral view of the lower leg. There are multiple linear lucencies along the medial aspect of the distal tibia. The fracture line does not appear to be a simple transverse or oblique fracture. It has some angulation. Therefore, the most likely diagnosis is Oblique.\n\n```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.8}\n```\n\nStep 2:\nYes\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows a lateral view of the lower leg with a linear lucency along the medial aspect of the distal tibia. This is characteristic of an oblique fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.49852776527404785,
+      "ensemble_top_confidence": 0.7246054410934448
+    },
+    {
+      "index": 48,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_216_jpg.rf.09c682c0a1a75e88eafc00c803df046d_0013.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.42226892709732056,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n\n```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The fracture line appears to be angled, characteristic of an oblique fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Oblique",
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.22735732793807983,
+      "ensemble_top_confidence": 0.42226892709732056
+    },
+    {
+      "index": 49,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_185_jpg.rf.296574d4d73b3b275f98485e55929b36_0015.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.3684464693069458,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Transverse\", \"top_confidence\": 0.95}\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a fracture line that is approximately perpendicular to the long axis of the tibia, which aligns with the definition of a transverse fracture.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse",
+        "Oblique"
+      ],
+      "ensemble_margin": 0.13013622164726257,
+      "ensemble_top_confidence": 0.3684464693069458
+    },
+    {
+      "index": 50,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_15_jpg.rf.5375438e888d9920b659ec4d1e6ada9c_0014.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.7669269442558289,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Oblique\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The fracture line appears to be angled, which is characteristic of an oblique fracture. The break is non-transverse, non-comminuted, and not a greenstick fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.5437393337488174,
+      "ensemble_top_confidence": 0.7669269442558289
+    },
+    {
+      "index": 51,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_153_jpg.rf.377dd7ac02acd51e04cd3613b0816efe_0008.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.5587642788887024,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a transverse fracture line across the distal radius, with a displaced fragment.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.2758682668209076,
+      "ensemble_top_confidence": 0.5587642788887024
+    },
+    {
+      "index": 52,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_91_jpg.rf.1f659d563a72001008a4cb4e1e1ac122_0000.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.7203820943832397,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a fracture line that is not straight and not perpendicular to the bone. The fracture line appears to be at an angle to the bone.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.4956224858760834,
+      "ensemble_top_confidence": 0.7203820943832397
+    },
+    {
+      "index": 53,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_62_jpg.rf.f047a0d102d9314c2c7a2b8ddc83d6a4_0016.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.7418842315673828,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1: The image shows a hand radiograph. The wrist appears to have a fracture, and there may be subtle irregularity of the bone cortex. Given the location and potential for displacement, an oblique fracture is a possibility.\n\n```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.8}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows an oblique fracture of the distal radius.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.5242969244718552,
+      "ensemble_top_confidence": 0.7418842315673828
+    },
+    {
+      "index": 54,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_162_jpg.rf.ac30e1cc085a0f7de3053f1a155fde2d_0012.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.6947793960571289,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Oblique\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.98,\n  \"explanation\": \"The image shows a clear fracture line with a sloped or angled pattern, consistent with an oblique fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.4702836871147156,
+      "ensemble_top_confidence": 0.6947793960571289
+    },
+    {
+      "index": 55,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_63_jpg.rf.c698f6c8c2ba783c371de27e0ca0ea04_0011.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.7666260004043579,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.85}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows a fracture line that is not perfectly straight, but not completely transverse. This suggests an oblique fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.5448446720838547,
+      "ensemble_top_confidence": 0.7666260004043579
+    },
+    {
+      "index": 56,
+      "image": "balanced_augmented_dataset/test/Oblique_Displaced/Oblique_Displaced_5_jpg.rf.d4f1d168998b27496281d8000f5b56bf_0006.jpg",
+      "true_class": "Oblique",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.7376972436904907,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's the analysis:\n\n**Step 1: Diagnosis**\n\nBased on the image, the most likely diagnosis is **Transverse**.\n\n```json\n{\"top_diagnosis\": \"Transverse\", \"top_confidence\": 0.95}\n```\n\n**Step 2: Verification of \"Transverse\"**\n\nThe image clearly shows a fracture line that is approximately perpendicular to the long axis of the bone.\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The fracture line appears to be roughly perpendicular to the long axis of the radius and ulna.\"}\n```\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.5154979974031448,
+      "ensemble_top_confidence": 0.7376972436904907
+    },
+    {
+      "index": 57,
+      "image": "balanced_augmented_dataset/test/Oblique/Oblique_127_jpg.rf.317404e014bd1e9eb0e8de43d9aa427a_0000.jpg",
+      "true_class": "Oblique Displaced",
+      "pred_class": "Oblique Displaced",
+      "pred_confidence": 0.7534123659133911,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Oblique Displaced\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a clear fracture line with displaced fragments, indicating an oblique displaced fracture pattern.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.5294020771980286,
+      "ensemble_top_confidence": 0.7534123659133911
+    },
+    {
+      "index": 58,
+      "image": "balanced_augmented_dataset/test/Oblique/Oblique_118_jpg.rf.72929bd6691255afdb8fc24ca780cf41_0003.jpg",
+      "true_class": "Oblique Displaced",
+      "pred_class": "Oblique Displaced",
+      "pred_confidence": 0.7694742679595947,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Oblique Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a significant angulation and displacement of the distal radius, with the fragment appearing to be angled diagonally. This is consistent with an oblique displaced fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.5464623868465424,
+      "ensemble_top_confidence": 0.7694742679595947
+    },
+    {
+      "index": 59,
+      "image": "balanced_augmented_dataset/test/Oblique/Oblique_9_jpg.rf.c1d673b11288ec8a2607ded019f37d9d_0008.jpg",
+      "true_class": "Oblique Displaced",
+      "pred_class": "Oblique Displaced",
+      "pred_confidence": 0.7417854070663452,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Oblique Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a fracture along the oblique line of the radius, with displacement of the bone fragments. The displacement is apparent.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.519385039806366,
+      "ensemble_top_confidence": 0.7417854070663452
+    },
+    {
+      "index": 60,
+      "image": "balanced_augmented_dataset/test/Oblique/Oblique_127_jpg.rf.6158ee3ab5d75c90f62291de080d94ef_0007.jpg",
+      "true_class": "Oblique Displaced",
+      "pred_class": "Oblique Displaced",
+      "pred_confidence": 0.7523738741874695,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's the analysis:\n\nStep 1:\n\nThe image shows a fracture line that is not purely transverse or oblique, but has a significant diagonal component. The bone fragments are displaced, and the alignment is irregular. Based on this, the top diagnosis is **Oblique Displaced**.\n\n```json\n{\"top_diagnosis\": \"Oblique Displaced\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n\nThe image shows a clear oblique fracture with displaced fragments.\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.99, \"explanation\": \"The image clearly demonstrates the diagonal fracture line, displacement of bone fragments, and misalignment, which are the key features of an oblique displaced fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.5282720923423767,
+      "ensemble_top_confidence": 0.7523738741874695
+    },
+    {
+      "index": 61,
+      "image": "balanced_augmented_dataset/test/Oblique/Oblique_48_jpg.rf.5816c24c7d39b49b0074807e13a159f1_0001.jpg",
+      "true_class": "Oblique Displaced",
+      "pred_class": "Oblique Displaced",
+      "pred_confidence": 0.7597066760063171,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's the breakdown:\n\n**Step 1:**\n\nBased on the image, the top diagnosis is **Oblique Displaced**.\n\n```json\n{\"top_diagnosis\": \"Oblique Displaced\", \"top_confidence\": 0.95}\n```\n\n**Step 2:**\n\nThe image does effectively demonstrate the visual features of 'Oblique Displaced'.\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a clear oblique fracture with displaced bone fragments.\"}\n```\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.5353112518787384,
+      "ensemble_top_confidence": 0.7597066760063171
+    },
+    {
+      "index": 62,
+      "image": "balanced_augmented_dataset/test/Oblique/Oblique_11_jpg.rf.345c6a6acdc33a82b8f35c0c67a2c97a_0006.jpg",
+      "true_class": "Oblique Displaced",
+      "pred_class": "Oblique Displaced",
+      "pred_confidence": 0.7605097889900208,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n{\"top_diagnosis\": \"Oblique Displaced\", \"top_confidence\": 0.95}\n\nStep 2:\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a break that is angled, with fragments that appear to be separated and misaligned. This aligns with the definition of Oblique Displaced.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.5358689725399017,
+      "ensemble_top_confidence": 0.7605097889900208
+    },
+    {
+      "index": 63,
+      "image": "balanced_augmented_dataset/test/Oblique/Oblique_118_jpg.rf.003d7f30da7698ba2b8689147570afe8_0002.jpg",
+      "true_class": "Oblique Displaced",
+      "pred_class": "Oblique Displaced",
+      "pred_confidence": 0.7575741410255432,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Oblique Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a clear displacement of the bone fragments, indicating a displaced oblique fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.5333527475595474,
+      "ensemble_top_confidence": 0.7575741410255432
+    },
+    {
+      "index": 64,
+      "image": "balanced_augmented_dataset/test/Oblique/Oblique_246_jpg.rf.5761ae00666b864051b675665c155d87_0004.jpg",
+      "true_class": "Oblique Displaced",
+      "pred_class": "Oblique Displaced",
+      "pred_confidence": 0.7339007258415222,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Oblique Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a clear break in the distal femur with displacement. The fracture line is angled, which aligns with the definition of an oblique fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.5097606480121613,
+      "ensemble_top_confidence": 0.7339007258415222
+    },
+    {
+      "index": 65,
+      "image": "balanced_augmented_dataset/test/Oblique/Oblique_9_jpg.rf.4a2eecbaf02555d48ef01a5e9f9932e8_0005.jpg",
+      "true_class": "Oblique Displaced",
+      "pred_class": "Oblique Displaced",
+      "pred_confidence": 0.2530142366886139,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Oblique Displaced\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows a fracture line that appears to be diagonal, with some displacement of the bone fragments. This aligns with the definition of an oblique displaced fracture.\"}\n```\n",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Oblique Displaced",
+        "Healthy"
+      ],
+      "ensemble_margin": 0.015275493264198303,
+      "ensemble_top_confidence": 0.2530142366886139
+    },
+    {
+      "index": 66,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_141_jpg.rf.f9720705840a6ef6dda2dc1341026d64_0000.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9853324294090271,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Spiral\",\n  \"top_confidence\": 0.85\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.95,\n  \"explanation\": \"The image shows a spiral fracture of the humerus, with a clear spiral fracture line.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.9811945958063006,
+      "ensemble_top_confidence": 0.9853324294090271
+    },
+    {
+      "index": 67,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_174_jpg.rf.dd6a68a34a2aaa1871b6a0d3c4a2c5c3_0005.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.8871351480484009,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n{\"top_diagnosis\": \"Spiral\", \"top_confidence\": 0.95}\n\nStep 2:\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a fracture line that appears to spiral around the bone, which is characteristic of a spiral fracture.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.8585044760257006,
+      "ensemble_top_confidence": 0.8871351480484009
+    },
+    {
+      "index": 68,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_231_jpg.rf.f72300deb8bfb0c41297190bff9d0f8c_0003.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9887106418609619,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n\n```json\n{\"top_diagnosis\": \"Spiral\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image clearly shows a spiral fracture pattern along the distal humerus.\"}\n```\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.9839816610328853,
+      "ensemble_top_confidence": 0.9887106418609619
+    },
+    {
+      "index": 69,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_104_jpg.rf.ccaa67393ec31cb33304c7e64414ba57_0011.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9904595613479614,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n\n```json\n{\"top_diagnosis\": \"Spiral\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a spiral fracture of the distal radius. The fracture line is a spiral pattern, consistent with a twisting injury.\"}\n```\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.9870876925997436,
+      "ensemble_top_confidence": 0.9904595613479614
+    },
+    {
+      "index": 70,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_231_jpg.rf.632251ffc28cccafdc8cf7d12f95b0eb_0009.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9739480018615723,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n\n```json\n{\"top_diagnosis\": \"Spiral\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows a fracture of the proximal humerus with a clear spiral fracture line extending from the greater to lesser tuberosities. This is characteristic of a spiral fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.9600475542247295,
+      "ensemble_top_confidence": 0.9739480018615723
+    },
+    {
+      "index": 71,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_104_jpg.rf.44ab9e89052e49056d4e86c9aebce337_0001.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9869574308395386,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n\nThe image shows a spiral fracture of the distal radius.\n\n```json\n{\"top_diagnosis\": \"Spiral\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image clearly shows a spiral fracture line in the distal radius.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.982451441232115,
+      "ensemble_top_confidence": 0.9869574308395386
+    },
+    {
+      "index": 72,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_257_jpg.rf.3cc9912ab33e60062d99c277a5aa9bf7_0010.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9740630388259888,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n{\"top_diagnosis\": \"Spiral\", \"top_confidence\": 0.95}\n\nStep 2:\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image clearly shows a spiral fracture pattern in the humerus, with a distinct helical fracture line.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.9606799110770226,
+      "ensemble_top_confidence": 0.9740630388259888
+    },
+    {
+      "index": 73,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_247_jpg.rf.6e190ca6ee411243e61275320722b690_0004.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9849915504455566,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n\n{\"top_diagnosis\": \"Spiral\", \"top_confidence\": 0.85}\n\nStep 2:\n\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows a spiral fracture of the humerus, characterized by a twisting fracture line that spirals along the bone.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.9791190796531737,
+      "ensemble_top_confidence": 0.9849915504455566
+    },
+    {
+      "index": 74,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_104_jpg.rf.0d4942b7944e851c0c05303e8ade2c72_0002.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9906582832336426,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Spiral\",\n  \"top_confidence\": 0.8\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a spiral fracture of the distal radius. The fracture line demonstrates a helical or spiral pattern.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.9868988927919418,
+      "ensemble_top_confidence": 0.9906582832336426
+    },
+    {
+      "index": 75,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_257_jpg.rf.83bc4520a552e26483790ab5c732a4e9_0006.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9455036520957947,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Spiral\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image clearly shows a spiral fracture line extending from the proximal radius to the distal radius.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.9074997678399086,
+      "ensemble_top_confidence": 0.9455036520957947
+    },
+    {
+      "index": 76,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_247_jpg.rf.ebeb3e774677923c4d5ecaee2ef30159_0008.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9842271208763123,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n\"top_diagnosis\": \"Spiral\",\n\"top_confidence\": 0.85\n}\n```\n\n```json\n{\n\"verdict\": \"yes\",\n\"confidence\": 0.95,\n\"explanation\": \"The image shows a spiral fracture line in the distal radius, which aligns with the definition of a spiral fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.9765450656414032,
+      "ensemble_top_confidence": 0.9842271208763123
+    },
+    {
+      "index": 77,
+      "image": "balanced_augmented_dataset/test/Spiral/Spiral_113_jpg.rf.140f7373084dc6169fc5448eea08e9bd_0007.jpg",
+      "true_class": "Spiral",
+      "pred_class": "Spiral",
+      "pred_confidence": 0.9889674782752991,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n{\"top_diagnosis\": \"Spiral\", \"top_confidence\": 0.95}\n\nStep 2:\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a spiral fracture line in the long bone, consistent with the definition of a spiral fracture.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Spiral"
+      ],
+      "ensemble_margin": 0.9867993236985058,
+      "ensemble_top_confidence": 0.9889674782752991
+    },
+    {
+      "index": 78,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_59_jpg.rf.50f3d8b103644341d682a29b8965c707_0003.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.630656361579895,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a transverse fracture line across the distal radius, with a displacement of the articular surface. This is consistent with the transverse fracture definition.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.404051810503006,
+      "ensemble_top_confidence": 0.630656361579895
+    },
+    {
+      "index": 79,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_149_jpg.rf.db6198d03b6a213a007469309023a78b_0016.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.5753705501556396,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's my analysis:\n\nStep 1:\n\nThe image shows a fracture in the distal radius, with a transverse fracture line clearly visible, and the bone is displaced. The displacement of the bone clearly suggests a transverse displaced fracture.\n\n```json\n{\"top_diagnosis\": \"Transverse Displaced\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n\nYes, the image effectively demonstrates the visual features of a transverse displaced fracture. The transverse fracture line and displacement of the bone fragments are clearly visible.\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.99, \"explanation\": \"The image clearly shows a transverse fracture with displacement of the bone fragments. This corresponds to the definition of a transverse displaced fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.34226876497268677,
+      "ensemble_top_confidence": 0.5753705501556396
+    },
+    {
+      "index": 80,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_49_jpg.rf.6c4e46e109a3fe19b86fa1579c73cc13_0011.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.7668416500091553,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Transverse\", \"top_confidence\": 0.95}\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a fracture line that appears approximately perpendicular to the long axis of the bone, consistent with the definition of a transverse fracture.\"}",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.5423503071069717,
+      "ensemble_top_confidence": 0.7668416500091553
+    },
+    {
+      "index": 81,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_58_jpg.rf.e57b879814d534f08d75dc5b34737dcd_0004.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Comminuted",
+      "pred_confidence": 0.7520819306373596,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Comminuted\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows multiple fragments of the radius and ulna, suggesting a comminuted fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.6688423976302147,
+      "ensemble_top_confidence": 0.7520819306373596
+    },
+    {
+      "index": 82,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_133_jpg.rf.9d048606cd0939e5f74503f9e42f5f26_0012.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Healthy",
+      "pred_confidence": 0.8996771574020386,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Healthy\", \"top_confidence\": 0.95}\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows bones of the forearm without any obvious fractures or dislocations. There is no apparent cortical discontinuity or bony fragmentation. The density of the bones appears normal.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Healthy"
+      ],
+      "ensemble_margin": 0.8453451134264469,
+      "ensemble_top_confidence": 0.8996771574020386
+    },
+    {
+      "index": 83,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_139_jpg.rf.f6d15b51cf51fa8fda93fa4016bbb957_0001.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.5934471487998962,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's my analysis:\n\n**Step 1: Top Diagnosis**\n\nBased on the provided image, the top diagnosis is **\"Transverse\"**. The image shows a clear fracture line running perpendicular to the long axis of the radius.\n\n```json\n{\n  \"top_diagnosis\": \"Transverse\",\n  \"top_confidence\": 0.95\n}\n```\n\n**Step 2: Visual Features of Transverse Fracture**\n\nThe image effectively demonstrates the visual features of a transverse fracture. The fracture line appears as a distinct linear density across the bone, indicating a break in its continuity. The location of the fracture line is also consistent with a transverse fracture of the radius.\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.98,\n  \"explanation\": \"The image clearly shows a linear density across the radius, perpendicular to its long axis, consistent with a transverse fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.38186995685100555,
+      "ensemble_top_confidence": 0.5934471487998962
+    },
+    {
+      "index": 84,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_132_jpg.rf.cd34131e4299cef2bba36b8c1596c8b3_0010.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.3760526478290558,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n\n```json\n{\"top_diagnosis\": \"Transverse Displaced\", \"top_confidence\": 0.85}\n```\n\nStep 2:\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows a fracture line that is approximately perpendicular to the long axis of the bone, particularly in the distal radius. The displacement further supports the diagnosis of a transverse fracture. Additionally, there's a visible discontinuity along the bone's cortex, which is indicative of a fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse",
+        "Comminuted"
+      ],
+      "ensemble_margin": 0.2054540514945984,
+      "ensemble_top_confidence": 0.3760526478290558
+    },
+    {
+      "index": 85,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_85_jpg.rf.32697d7d2444a34a01b41f290e609cd5_0009.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.42736542224884033,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Greenstick\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a greenstick fracture of the distal femur. The fracture line is visible with a buckle-like appearance of the cortex, typical of a greenstick fracture. The fracture is also likely incomplete, since it is not described as a comminuted or transverse fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Greenstick",
+        "Oblique Displaced"
+      ],
+      "ensemble_margin": 0.1919618397951126,
+      "ensemble_top_confidence": 0.42736542224884033
+    },
+    {
+      "index": 86,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_69_jpg.rf.2719c75f64f1281b6d2fde87672137b5_0015.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.5042464137077332,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse\",\n  \"top_confidence\": 0.85\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.95,\n  \"explanation\": \"The image shows a clear transverse fracture line approximately perpendicular to the long axis of the bone.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.27568382024765015,
+      "ensemble_top_confidence": 0.5042464137077332
+    },
+    {
+      "index": 87,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_122_jpg.rf.0098daba0e5d1d4e575c91f2482b8649_0000.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Greenstick",
+      "pred_confidence": 0.5798112154006958,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Greenstick\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a fracture with a bent cortex, consistent with the definition of a greenstick fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Greenstick"
+      ],
+      "ensemble_margin": 0.3267131447792053,
+      "ensemble_top_confidence": 0.5798112154006958
+    },
+    {
+      "index": 88,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_149_jpg.rf.3b95c03cb6b56458ad576ea87d7301af_0002.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.5395001173019409,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Transverse\", \"top_confidence\": 0.85}\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows a clear transverse fracture line across the distal radius, which aligns with the definition of a transverse fracture.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.3246820271015167,
+      "ensemble_top_confidence": 0.5395001173019409
+    },
+    {
+      "index": 89,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_29_jpg.rf.e58e5474c3bfe22386d7fc8ff275812a_0014.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.7623934745788574,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Transverse\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a fracture line that is approximately perpendicular to the long axis of the bone. There is a disruption in the cortex, which is consistent with a fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.5442919433116913,
+      "ensemble_top_confidence": 0.7623934745788574
+    },
+    {
+      "index": 90,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_19_mri_0_9576_jpeg.rf.4a1a56c970e3371b11193a33fa1ecb4c_0013.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.6968181729316711,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a linear density extending perpendicular to the long axis of the humerus. The fracture line appears relatively straight.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.47174227237701416,
+      "ensemble_top_confidence": 0.6968181729316711
+    },
+    {
+      "index": 91,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_208_jpg.rf.6d15d106ec4ad93215fe1b0981dacc35_0005.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.5953963398933411,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Transverse\", \"top_confidence\": 0.95}\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a transverse fracture line approximately perpendicular to the long axis of the radius and ulna.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.4121924787759781,
+      "ensemble_top_confidence": 0.5953963398933411
+    },
+    {
+      "index": 92,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_224_jpg.rf.dac498242c6bca92e33acdda74e9ccb3_0007.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.7695217728614807,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a fracture line that appears approximately perpendicular to the long axis of the radius. It is a transverse fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.5479189455509186,
+      "ensemble_top_confidence": 0.7695217728614807
+    },
+    {
+      "index": 93,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_128_jpg.rf.61e504aaf99b9df4a19c66cdf6b1898a_0006.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.5353785753250122,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Transverse Displaced\", \"top_confidence\": 0.85}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image clearly shows a fracture line that is approximately perpendicular to the long axis of the humerus, which is the defining characteristic of a transverse fracture. The displacement suggests that the fracture is transverse displaced.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.26699385046958923,
+      "ensemble_top_confidence": 0.5353785753250122
+    },
+    {
+      "index": 94,
+      "image": "balanced_augmented_dataset/test/Transverse_Displaced/Transverse_Displaced_19_mri_0_9576_jpeg.rf.142a49a1fe89e3f28c8bdff2b1346135_0008.jpg",
+      "true_class": "Transverse",
+      "pred_class": "Transverse",
+      "pred_confidence": 0.7215421795845032,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "{\"top_diagnosis\": \"Transverse\", \"top_confidence\": 0.95}\n{\"verdict\": \"yes\", \"confidence\": 0.9, \"explanation\": \"The image shows a break in the radius that appears to be perpendicular to the long axis of the bone, indicating a transverse fracture.\"}\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse"
+      ],
+      "ensemble_margin": 0.4974624812602997,
+      "ensemble_top_confidence": 0.7215421795845032
+    },
+    {
+      "index": 95,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_61_jpg.rf.08c73461942709a66fe7a8691efe01f4_0004.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7613123059272766,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a displaced fracture line at a roughly 90-degree angle to the bone cortex. This strongly suggests a transverse displaced fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5379799008369446,
+      "ensemble_top_confidence": 0.7613123059272766
+    },
+    {
+      "index": 96,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_190_jpg.rf.597ca50b2be413d2d9ec264f0aa77843_0013.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7654384970664978,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a transverse fracture line in the distal humerus with displacement of the fracture fragments.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5414783507585526,
+      "ensemble_top_confidence": 0.7654384970664978
+    },
+    {
+      "index": 97,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_190_jpg.rf.2512cf7390e6033b13f5e7acacec3c82_0016.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7624610066413879,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a transverse fracture with displacement, which aligns with the definition of a transverse displaced fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5390898734331131,
+      "ensemble_top_confidence": 0.7624610066413879
+    },
+    {
+      "index": 98,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_25_jpg.rf.bb03d4240f0831634da2122308b59ca2_0000.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7296949625015259,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's my analysis:\n\n**Step 1:**\n\nBased on the image, the most likely diagnosis is **\"Transverse Displaced\"**.\n\n```json\n{\"top_diagnosis\": \"Transverse Displaced\", \"top_confidence\": 0.95}\n```\n\n**Step 2:**\n\nYes, this image effectively demonstrates the visual features of 'Transverse Displaced'.\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image clearly shows a displaced fracture line running perpendicular to the long axis of the bone, which is the defining characteristic of a transverse fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5019796192646027,
+      "ensemble_top_confidence": 0.7296949625015259
+    },
+    {
+      "index": 99,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_153_jpg.rf.91253b9d931b8762dab5296394d4bfd7_0002.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7535790205001831,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a fracture of the distal radius with a transverse fracture line, and displacement of the fragments.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5266200006008148,
+      "ensemble_top_confidence": 0.7535790205001831
+    },
+    {
+      "index": 100,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_13_jpg.rf.3301a0994bf342b0bac5aec93ee08ead_0012.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7332097291946411,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's the breakdown:\n\n**Step 1:**\n\nThe image shows a transverse fracture of the distal radius with displacement. The fracture line appears to be a straight, horizontal line across the bone. There is some displacement of the distal fragment. Therefore, the top diagnosis is \"Transverse Displaced\".\n\n```json\n{\"top_diagnosis\": \"Transverse Displaced\", \"top_confidence\": 0.95}\n```\n\n**Step 2:**\n\nYes, the image effectively demonstrates the visual features of \"Transverse Displaced\". The fracture is a transverse line with displacement.\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image clearly shows a transverse fracture with displacement of the distal radius fragment.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5021459013223648,
+      "ensemble_top_confidence": 0.7332097291946411
+    },
+    {
+      "index": 101,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_61_jpg.rf.9b078c080ce18d406062750d59d369de_0001.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7689359188079834,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.98,\n  \"explanation\": \"The image shows a fracture line that appears to be perpendicular to the long axis of the humerus, with displacement of the fracture fragments. This is consistent with the definition of a transverse fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5459029078483582,
+      "ensemble_top_confidence": 0.7689359188079834
+    },
+    {
+      "index": 102,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_86_jpg.rf.b8e18505035a64082a0c06ee4ed33db6_0014.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.6254364252090454,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a fracture with a non-straight line, which is characteristic of an oblique fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Oblique"
+      ],
+      "ensemble_margin": 0.4014069437980652,
+      "ensemble_top_confidence": 0.6254364252090454
+    },
+    {
+      "index": 103,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_23_jpg.rf.9871416a240e834cf9c0d4daa5f79460_0006.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7673114538192749,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n\n```json\n{\"top_diagnosis\": \"Transverse Displaced\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a clear transverse fracture of the right femoral shaft, with displacement of the fracture fragments.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5443417727947235,
+      "ensemble_top_confidence": 0.7673114538192749
+    },
+    {
+      "index": 104,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_229_jpg.rf.1681cd6adb482bda78ae6a54bfb332fe_0011.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7624359726905823,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.95,\n  \"explanation\": \"The image shows a fracture with a clear linear break through the cortex, indicating a transverse fracture pattern with displacement.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5396623015403748,
+      "ensemble_top_confidence": 0.7624359726905823
+    },
+    {
+      "index": 105,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_1_jpg.rf.7cb5b0dcc7238ca93c479d93284daa01_0008.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Oblique",
+      "pred_confidence": 0.3414837419986725,
+      "is_correct": false,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Oblique\", \"top_confidence\": 0.85}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image shows a fracture of the distal radius, with the cortex being displaced. The fracture line appears to be at an angle to the bone's long axis, suggestive of an oblique fracture pattern.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Oblique",
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.08922255039215088,
+      "ensemble_top_confidence": 0.3414837419986725
+    },
+    {
+      "index": 106,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_1_jpg.rf.ad0984cd8194a2b2580ab2b9198b41da_0005.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.5468300580978394,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a clear transverse fracture with displacement of the bone fragments.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.15994077920913696,
+      "ensemble_top_confidence": 0.5468300580978394
+    },
+    {
+      "index": 107,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_153_jpg.rf.08e1a53f8b4c40907f0f20362078debc_0007.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7441547513008118,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Transverse Displaced\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image clearly shows a transverse fracture in the radius with displacement of the bone fragments, consistent with the definition of a Transverse Displaced fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5097179412841797,
+      "ensemble_top_confidence": 0.7441547513008118
+    },
+    {
+      "index": 108,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_15_jpg.rf.790af0f8086e2c9f31f49d4a99e32a5f_0010.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.5040708780288696,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\n  \"top_diagnosis\": \"Transverse Displaced\",\n  \"top_confidence\": 0.95\n}\n```\n\n```json\n{\n  \"verdict\": \"yes\",\n  \"confidence\": 0.9,\n  \"explanation\": \"The image shows a clear transverse fracture of the radius, with displacement of the bone fragments. This is a definitive feature of a transverse displaced fracture.\"\n}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "uncertain",
+      "final_flagged_for_human": true,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.1567787230014801,
+      "ensemble_top_confidence": 0.5040708780288696
+    },
+    {
+      "index": 109,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_25_jpg.rf.c4f3ba33330278f02337266734983536_0003.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7573087811470032,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Here's the breakdown of the image analysis:\n\n**Step 1:**\n\nBased on the image, the most prominent finding is a fracture of the distal radius. It appears to be a transverse displaced fracture.\n\n```json\n{\"top_diagnosis\": \"Transverse Displaced\", \"top_confidence\": 0.95}\n```\n\n**Step 2:**\n\nThe image effectively demonstrates the visual features of a transverse displaced fracture. The fracture line is clearly visible, and there is displacement of the bone fragments.\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.95, \"explanation\": \"The image clearly shows a transverse fracture with displacement of the bone fragments, fulfilling the definition of a Transverse Displaced fracture.\"}\n```\n",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5274715572595596,
+      "ensemble_top_confidence": 0.7573087811470032
+    },
+    {
+      "index": 110,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_98_jpg.rf.37df8365902d69eb73efc7553cd5443f_0009.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7686566114425659,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "Step 1:\n```json\n{\"top_diagnosis\": \"Transverse Displaced\", \"top_confidence\": 0.95}\n```\n\nStep 2:\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a clear fracture line that appears to be transverse. The fracture appears to be displaced, as the distal fragment is shifted away from the proximal fragment, which is consistent with a transverse displaced fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.545423611998558,
+      "ensemble_top_confidence": 0.7686566114425659
+    },
+    {
+      "index": 111,
+      "image": "balanced_augmented_dataset/test/Transverse/Transverse_18_jpg.rf.5bdf9ce282f638a93067bb5348dad9cb_0015.jpg",
+      "true_class": "Transverse Displaced",
+      "pred_class": "Transverse Displaced",
+      "pred_confidence": 0.7548130750656128,
+      "is_correct": true,
+      "critic_verdict": "uncertain",
+      "critic_confidence": 0.5,
+      "critic_explanation": "```json\n{\"top_diagnosis\": \"Transverse Displaced\", \"top_confidence\": 0.95}\n```\n\n```json\n{\"verdict\": \"yes\", \"confidence\": 0.98, \"explanation\": \"The image shows a transverse fracture with displacement, which is consistent with the definition of Transverse Displaced fracture.\"}\n```",
+      "flagged_for_human": true,
+      "final_verdict": "yes",
+      "final_flagged_for_human": false,
+      "conformal_set": [
+        "Transverse Displaced"
+      ],
+      "ensemble_margin": 0.5286730527877808,
+      "ensemble_top_confidence": 0.7548130750656128
+    }
+  ]
+}

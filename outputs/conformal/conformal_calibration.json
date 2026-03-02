@@ -1,0 +1,20 @@
+{
+  "0.05": {
+    "alpha": 0.05,
+    "target_coverage": 0.95,
+    "threshold": 0.717721700668335,
+    "val_empirical_coverage": 0.9528301886792453,
+    "val_avg_set_size": 1.0754716981132075,
+    "val_median_set_size": 1.0,
+    "val_n_samples": 106
+  },
+  "0.1": {
+    "alpha": 0.1,
+    "target_coverage": 0.9,
+    "threshold": 0.5292484760284424,
+    "val_empirical_coverage": 0.9622641509433962,
+    "val_avg_set_size": 1.0660377358490567,
+    "val_median_set_size": 1.0,
+    "val_n_samples": 106
+  }
+}

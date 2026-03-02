@@ -1,0 +1,852 @@
+[
+  {
+    "run_name": "MaxViT",
+    "description": "Individual model: MaxViT",
+    "metrics": {
+      "n_samples": 140,
+      "accuracy": 0.95,
+      "precision": 1.0,
+      "recall": 0.95,
+      "sensitivity": 0.95,
+      "f1": 0.9743589743589743,
+      "detection_rate": 0.95,
+      "mcc": 0.0,
+      "cohen_kappa": 0.0,
+      "tp": 133,
+      "tn": 0,
+      "fp": 0,
+      "fn": 7,
+      "specificity": null,
+      "npv": 0.0,
+      "auc": null,
+      "mean_fracture_score": 0.9468916978998615,
+      "per_class": {
+        "Avulsion fracture": {
+          "total": 14,
+          "detected": 12,
+          "missed": 2,
+          "detection_rate": 0.8571
+        },
+        "Comminuted fracture": {
+          "total": 14,
+          "detected": 14,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Fracture Dislocation": {
+          "total": 19,
+          "detected": 18,
+          "missed": 1,
+          "detection_rate": 0.9474
+        },
+        "Greenstick fracture": {
+          "total": 16,
+          "detected": 15,
+          "missed": 1,
+          "detection_rate": 0.9375
+        },
+        "Hairline Fracture": {
+          "total": 10,
+          "detected": 9,
+          "missed": 1,
+          "detection_rate": 0.9
+        },
+        "Impacted fracture": {
+          "total": 9,
+          "detected": 7,
+          "missed": 2,
+          "detection_rate": 0.7778
+        },
+        "Longitudinal fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Oblique fracture": {
+          "total": 16,
+          "detected": 16,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Pathological fracture": {
+          "total": 18,
+          "detected": 18,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Spiral Fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        }
+      }
+    }
+  },
+  {
+    "run_name": "YOLO",
+    "description": "Individual model: YOLO",
+    "metrics": {
+      "n_samples": 140,
+      "accuracy": 0.9214285714285714,
+      "precision": 1.0,
+      "recall": 0.9214285714285714,
+      "sensitivity": 0.9214285714285714,
+      "f1": 0.9591078066914498,
+      "detection_rate": 0.9214285714285714,
+      "mcc": 0.0,
+      "cohen_kappa": 0.0,
+      "tp": 129,
+      "tn": 0,
+      "fp": 0,
+      "fn": 11,
+      "specificity": null,
+      "npv": 0.0,
+      "auc": null,
+      "mean_fracture_score": 0.9270208899735024,
+      "per_class": {
+        "Avulsion fracture": {
+          "total": 14,
+          "detected": 11,
+          "missed": 3,
+          "detection_rate": 0.7857
+        },
+        "Comminuted fracture": {
+          "total": 14,
+          "detected": 14,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Fracture Dislocation": {
+          "total": 19,
+          "detected": 17,
+          "missed": 2,
+          "detection_rate": 0.8947
+        },
+        "Greenstick fracture": {
+          "total": 16,
+          "detected": 16,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Hairline Fracture": {
+          "total": 10,
+          "detected": 8,
+          "missed": 2,
+          "detection_rate": 0.8
+        },
+        "Impacted fracture": {
+          "total": 9,
+          "detected": 8,
+          "missed": 1,
+          "detection_rate": 0.8889
+        },
+        "Longitudinal fracture": {
+          "total": 12,
+          "detected": 10,
+          "missed": 2,
+          "detection_rate": 0.8333
+        },
+        "Oblique fracture": {
+          "total": 16,
+          "detected": 15,
+          "missed": 1,
+          "detection_rate": 0.9375
+        },
+        "Pathological fracture": {
+          "total": 18,
+          "detected": 18,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Spiral Fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        }
+      }
+    }
+  },
+  {
+    "run_name": "HyperColumn-CBAM-DenseNet169",
+    "description": "Individual model: HyperColumn-CBAM-DenseNet169",
+    "metrics": {
+      "n_samples": 140,
+      "accuracy": 0.9,
+      "precision": 1.0,
+      "recall": 0.9,
+      "sensitivity": 0.9,
+      "f1": 0.9473684210526315,
+      "detection_rate": 0.9,
+      "mcc": 0.0,
+      "cohen_kappa": 0.0,
+      "tp": 126,
+      "tn": 0,
+      "fp": 0,
+      "fn": 14,
+      "specificity": null,
+      "npv": 0.0,
+      "auc": null,
+      "mean_fracture_score": 0.9029951696550728,
+      "per_class": {
+        "Avulsion fracture": {
+          "total": 14,
+          "detected": 12,
+          "missed": 2,
+          "detection_rate": 0.8571
+        },
+        "Comminuted fracture": {
+          "total": 14,
+          "detected": 14,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Fracture Dislocation": {
+          "total": 19,
+          "detected": 19,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Greenstick fracture": {
+          "total": 16,
+          "detected": 14,
+          "missed": 2,
+          "detection_rate": 0.875
+        },
+        "Hairline Fracture": {
+          "total": 10,
+          "detected": 8,
+          "missed": 2,
+          "detection_rate": 0.8
+        },
+        "Impacted fracture": {
+          "total": 9,
+          "detected": 7,
+          "missed": 2,
+          "detection_rate": 0.7778
+        },
+        "Longitudinal fracture": {
+          "total": 12,
+          "detected": 10,
+          "missed": 2,
+          "detection_rate": 0.8333
+        },
+        "Oblique fracture": {
+          "total": 16,
+          "detected": 12,
+          "missed": 4,
+          "detection_rate": 0.75
+        },
+        "Pathological fracture": {
+          "total": 18,
+          "detected": 18,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Spiral Fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        }
+      }
+    }
+  },
+  {
+    "run_name": "RAD-DINO",
+    "description": "Individual model: RAD-DINO",
+    "metrics": {
+      "n_samples": 140,
+      "accuracy": 0.9142857142857143,
+      "precision": 1.0,
+      "recall": 0.9142857142857143,
+      "sensitivity": 0.9142857142857143,
+      "f1": 0.9552238805970149,
+      "detection_rate": 0.9142857142857143,
+      "mcc": 0.0,
+      "cohen_kappa": 0.0,
+      "tp": 128,
+      "tn": 0,
+      "fp": 0,
+      "fn": 12,
+      "specificity": null,
+      "npv": 0.0,
+      "auc": null,
+      "mean_fracture_score": 0.9013854672616747,
+      "per_class": {
+        "Avulsion fracture": {
+          "total": 14,
+          "detected": 10,
+          "missed": 4,
+          "detection_rate": 0.7143
+        },
+        "Comminuted fracture": {
+          "total": 14,
+          "detected": 14,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Fracture Dislocation": {
+          "total": 19,
+          "detected": 17,
+          "missed": 2,
+          "detection_rate": 0.8947
+        },
+        "Greenstick fracture": {
+          "total": 16,
+          "detected": 15,
+          "missed": 1,
+          "detection_rate": 0.9375
+        },
+        "Hairline Fracture": {
+          "total": 10,
+          "detected": 10,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Impacted fracture": {
+          "total": 9,
+          "detected": 8,
+          "missed": 1,
+          "detection_rate": 0.8889
+        },
+        "Longitudinal fracture": {
+          "total": 12,
+          "detected": 11,
+          "missed": 1,
+          "detection_rate": 0.9167
+        },
+        "Oblique fracture": {
+          "total": 16,
+          "detected": 16,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Pathological fracture": {
+          "total": 18,
+          "detected": 15,
+          "missed": 3,
+          "detection_rate": 0.8333
+        },
+        "Spiral Fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        }
+      }
+    }
+  },
+  {
+    "run_name": "Ensemble (Weighted Avg)",
+    "description": "Full 4-model ensemble with weighted-average strategy",
+    "metrics": {
+      "n_samples": 140,
+      "accuracy": 0.9285714285714286,
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "sensitivity": 0.9285714285714286,
+      "f1": 0.9629629629629629,
+      "detection_rate": 0.9285714285714286,
+      "mcc": 0.0,
+      "cohen_kappa": 0.0,
+      "tp": 130,
+      "tn": 0,
+      "fp": 0,
+      "fn": 10,
+      "specificity": null,
+      "npv": 0.0,
+      "auc": null,
+      "mean_fracture_score": 0.9195733061975278,
+      "per_class": {
+        "Avulsion fracture": {
+          "total": 14,
+          "detected": 12,
+          "missed": 2,
+          "detection_rate": 0.8571
+        },
+        "Comminuted fracture": {
+          "total": 14,
+          "detected": 14,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Fracture Dislocation": {
+          "total": 19,
+          "detected": 18,
+          "missed": 1,
+          "detection_rate": 0.9474
+        },
+        "Greenstick fracture": {
+          "total": 16,
+          "detected": 15,
+          "missed": 1,
+          "detection_rate": 0.9375
+        },
+        "Hairline Fracture": {
+          "total": 10,
+          "detected": 9,
+          "missed": 1,
+          "detection_rate": 0.9
+        },
+        "Impacted fracture": {
+          "total": 9,
+          "detected": 8,
+          "missed": 1,
+          "detection_rate": 0.8889
+        },
+        "Longitudinal fracture": {
+          "total": 12,
+          "detected": 10,
+          "missed": 2,
+          "detection_rate": 0.8333
+        },
+        "Oblique fracture": {
+          "total": 16,
+          "detected": 14,
+          "missed": 2,
+          "detection_rate": 0.875
+        },
+        "Pathological fracture": {
+          "total": 18,
+          "detected": 18,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Spiral Fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        }
+      }
+    }
+  },
+  {
+    "run_name": "Ensemble (Stacking)",
+    "description": "Full 4-model ensemble with stacking meta-classifier",
+    "metrics": {
+      "n_samples": 140,
+      "accuracy": 0.9642857142857143,
+      "precision": 1.0,
+      "recall": 0.9642857142857143,
+      "sensitivity": 0.9642857142857143,
+      "f1": 0.9818181818181818,
+      "detection_rate": 0.9642857142857143,
+      "mcc": 0.0,
+      "cohen_kappa": 0.0,
+      "tp": 135,
+      "tn": 0,
+      "fp": 0,
+      "fn": 5,
+      "specificity": null,
+      "npv": 0.0,
+      "auc": null,
+      "mean_fracture_score": 0.9159970221557094,
+      "per_class": {
+        "Avulsion fracture": {
+          "total": 14,
+          "detected": 12,
+          "missed": 2,
+          "detection_rate": 0.8571
+        },
+        "Comminuted fracture": {
+          "total": 14,
+          "detected": 14,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Fracture Dislocation": {
+          "total": 19,
+          "detected": 18,
+          "missed": 1,
+          "detection_rate": 0.9474
+        },
+        "Greenstick fracture": {
+          "total": 16,
+          "detected": 16,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Hairline Fracture": {
+          "total": 10,
+          "detected": 10,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Impacted fracture": {
+          "total": 9,
+          "detected": 8,
+          "missed": 1,
+          "detection_rate": 0.8889
+        },
+        "Longitudinal fracture": {
+          "total": 12,
+          "detected": 11,
+          "missed": 1,
+          "detection_rate": 0.9167
+        },
+        "Oblique fracture": {
+          "total": 16,
+          "detected": 16,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Pathological fracture": {
+          "total": 18,
+          "detected": 18,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Spiral Fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        }
+      }
+    }
+  },
+  {
+    "run_name": "Triplet (w/o MaxViT)",
+    "description": "3-model ensemble: YOLO, HyperColumn-CBAM-DenseNet169, RAD-DINO (weighted avg)",
+    "metrics": {
+      "n_samples": 140,
+      "accuracy": 0.9214285714285714,
+      "precision": 1.0,
+      "recall": 0.9214285714285714,
+      "sensitivity": 0.9214285714285714,
+      "f1": 0.9591078066914498,
+      "detection_rate": 0.9214285714285714,
+      "mcc": 0.0,
+      "cohen_kappa": 0.0,
+      "tp": 129,
+      "tn": 0,
+      "fp": 0,
+      "fn": 11,
+      "specificity": null,
+      "npv": 0.0,
+      "auc": null,
+      "mean_fracture_score": 0.9104671756300834,
+      "per_class": {
+        "Avulsion fracture": {
+          "total": 14,
+          "detected": 12,
+          "missed": 2,
+          "detection_rate": 0.8571
+        },
+        "Comminuted fracture": {
+          "total": 14,
+          "detected": 14,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Fracture Dislocation": {
+          "total": 19,
+          "detected": 17,
+          "missed": 2,
+          "detection_rate": 0.8947
+        },
+        "Greenstick fracture": {
+          "total": 16,
+          "detected": 16,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Hairline Fracture": {
+          "total": 10,
+          "detected": 9,
+          "missed": 1,
+          "detection_rate": 0.9
+        },
+        "Impacted fracture": {
+          "total": 9,
+          "detected": 7,
+          "missed": 2,
+          "detection_rate": 0.7778
+        },
+        "Longitudinal fracture": {
+          "total": 12,
+          "detected": 10,
+          "missed": 2,
+          "detection_rate": 0.8333
+        },
+        "Oblique fracture": {
+          "total": 16,
+          "detected": 14,
+          "missed": 2,
+          "detection_rate": 0.875
+        },
+        "Pathological fracture": {
+          "total": 18,
+          "detected": 18,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Spiral Fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        }
+      }
+    }
+  },
+  {
+    "run_name": "Triplet (w/o YOLO)",
+    "description": "3-model ensemble: MaxViT, HyperColumn-CBAM-DenseNet169, RAD-DINO (weighted avg)",
+    "metrics": {
+      "n_samples": 140,
+      "accuracy": 0.9357142857142857,
+      "precision": 1.0,
+      "recall": 0.9357142857142857,
+      "sensitivity": 0.9357142857142857,
+      "f1": 0.966789667896679,
+      "detection_rate": 0.9357142857142857,
+      "mcc": 0.0,
+      "cohen_kappa": 0.0,
+      "tp": 131,
+      "tn": 0,
+      "fp": 0,
+      "fn": 9,
+      "specificity": null,
+      "npv": 0.0,
+      "auc": null,
+      "mean_fracture_score": 0.917090778272203,
+      "per_class": {
+        "Avulsion fracture": {
+          "total": 14,
+          "detected": 12,
+          "missed": 2,
+          "detection_rate": 0.8571
+        },
+        "Comminuted fracture": {
+          "total": 14,
+          "detected": 14,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Fracture Dislocation": {
+          "total": 19,
+          "detected": 18,
+          "missed": 1,
+          "detection_rate": 0.9474
+        },
+        "Greenstick fracture": {
+          "total": 16,
+          "detected": 15,
+          "missed": 1,
+          "detection_rate": 0.9375
+        },
+        "Hairline Fracture": {
+          "total": 10,
+          "detected": 9,
+          "missed": 1,
+          "detection_rate": 0.9
+        },
+        "Impacted fracture": {
+          "total": 9,
+          "detected": 7,
+          "missed": 2,
+          "detection_rate": 0.7778
+        },
+        "Longitudinal fracture": {
+          "total": 12,
+          "detected": 11,
+          "missed": 1,
+          "detection_rate": 0.9167
+        },
+        "Oblique fracture": {
+          "total": 16,
+          "detected": 15,
+          "missed": 1,
+          "detection_rate": 0.9375
+        },
+        "Pathological fracture": {
+          "total": 18,
+          "detected": 18,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Spiral Fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        }
+      }
+    }
+  },
+  {
+    "run_name": "Triplet (w/o HyperColumn-CBAM-DenseNet169)",
+    "description": "3-model ensemble: MaxViT, YOLO, RAD-DINO (weighted avg)",
+    "metrics": {
+      "n_samples": 140,
+      "accuracy": 0.9214285714285714,
+      "precision": 1.0,
+      "recall": 0.9214285714285714,
+      "sensitivity": 0.9214285714285714,
+      "f1": 0.9591078066914498,
+      "detection_rate": 0.9214285714285714,
+      "mcc": 0.0,
+      "cohen_kappa": 0.0,
+      "tp": 129,
+      "tn": 0,
+      "fp": 0,
+      "fn": 11,
+      "specificity": null,
+      "npv": 0.0,
+      "auc": null,
+      "mean_fracture_score": 0.9250993517116797,
+      "per_class": {
+        "Avulsion fracture": {
+          "total": 14,
+          "detected": 12,
+          "missed": 2,
+          "detection_rate": 0.8571
+        },
+        "Comminuted fracture": {
+          "total": 14,
+          "detected": 14,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Fracture Dislocation": {
+          "total": 19,
+          "detected": 17,
+          "missed": 2,
+          "detection_rate": 0.8947
+        },
+        "Greenstick fracture": {
+          "total": 16,
+          "detected": 15,
+          "missed": 1,
+          "detection_rate": 0.9375
+        },
+        "Hairline Fracture": {
+          "total": 10,
+          "detected": 9,
+          "missed": 1,
+          "detection_rate": 0.9
+        },
+        "Impacted fracture": {
+          "total": 9,
+          "detected": 8,
+          "missed": 1,
+          "detection_rate": 0.8889
+        },
+        "Longitudinal fracture": {
+          "total": 12,
+          "detected": 10,
+          "missed": 2,
+          "detection_rate": 0.8333
+        },
+        "Oblique fracture": {
+          "total": 16,
+          "detected": 15,
+          "missed": 1,
+          "detection_rate": 0.9375
+        },
+        "Pathological fracture": {
+          "total": 18,
+          "detected": 17,
+          "missed": 1,
+          "detection_rate": 0.9444
+        },
+        "Spiral Fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        }
+      }
+    }
+  },
+  {
+    "run_name": "Triplet (w/o RAD-DINO)",
+    "description": "3-model ensemble: MaxViT, YOLO, HyperColumn-CBAM-DenseNet169 (weighted avg)",
+    "metrics": {
+      "n_samples": 140,
+      "accuracy": 0.9285714285714286,
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "sensitivity": 0.9285714285714286,
+      "f1": 0.9629629629629629,
+      "detection_rate": 0.9285714285714286,
+      "mcc": 0.0,
+      "cohen_kappa": 0.0,
+      "tp": 130,
+      "tn": 0,
+      "fp": 0,
+      "fn": 10,
+      "specificity": null,
+      "npv": 0.0,
+      "auc": null,
+      "mean_fracture_score": 0.9256359191761455,
+      "per_class": {
+        "Avulsion fracture": {
+          "total": 14,
+          "detected": 11,
+          "missed": 3,
+          "detection_rate": 0.7857
+        },
+        "Comminuted fracture": {
+          "total": 14,
+          "detected": 14,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Fracture Dislocation": {
+          "total": 19,
+          "detected": 18,
+          "missed": 1,
+          "detection_rate": 0.9474
+        },
+        "Greenstick fracture": {
+          "total": 16,
+          "detected": 16,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Hairline Fracture": {
+          "total": 10,
+          "detected": 8,
+          "missed": 2,
+          "detection_rate": 0.8
+        },
+        "Impacted fracture": {
+          "total": 9,
+          "detected": 8,
+          "missed": 1,
+          "detection_rate": 0.8889
+        },
+        "Longitudinal fracture": {
+          "total": 12,
+          "detected": 11,
+          "missed": 1,
+          "detection_rate": 0.9167
+        },
+        "Oblique fracture": {
+          "total": 16,
+          "detected": 14,
+          "missed": 2,
+          "detection_rate": 0.875
+        },
+        "Pathological fracture": {
+          "total": 18,
+          "detected": 18,
+          "missed": 0,
+          "detection_rate": 1.0
+        },
+        "Spiral Fracture": {
+          "total": 12,
+          "detected": 12,
+          "missed": 0,
+          "detection_rate": 1.0
+        }
+      }
+    }
+  }
+]
