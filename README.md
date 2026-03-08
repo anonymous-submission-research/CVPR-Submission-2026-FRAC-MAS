@@ -21,7 +21,7 @@ A modular medical imaging AI system for bone fracture detection combining a **4-
 
 ## Overview
 
-MedAI is designed to assist healthcare professionals and patients in understanding bone fractures from X-ray images while maintaining the clinician as the final decision-maker. The system decomposes the diagnostic pipeline into four specialized agents — each independently verifiable — and routes every case through a LangGraph-orchestrated workflow that enforces evidence grounding and blind verification before any output reaches the user.
+Frac-MAS is designed to assist healthcare professionals and patients in understanding bone fractures from X-ray images while maintaining the clinician as the final decision-maker. The system decomposes the diagnostic pipeline into four specialized agents — each independently verifiable — and routes every case through a LangGraph-orchestrated workflow that enforces evidence grounding and blind verification before any output reaches the user.
 
 ### Key Highlights
 
@@ -273,19 +273,19 @@ CVPR-Submission-2026-FRAC-MAS/
 │   ├──  src/app/                      # App Router pages (diagnose/, rubric/, api/)
 │   ├──  src/components/              # Reusable UI components (Shadcn, Radix, Recharts)
 │   ├──  package.json                 # Next.js, Tailwind CSS, framer-motion, chart.js
-│   ├──  medai_diagnosis_report.pdf   # Comprehensive technical report
+│   ├──  fracmas_diagnosis_report.pdf   # Comprehensive technical report
 │   └──  README.md
 │
 ├──  backend_hf/                       # FastAPI backend (Hugging Face Spaces / Docker)
 │   ├──  app.py                        # FastAPI app: /diagnose, /chat, /report endpoints
-│   ├──  medai_agent_module.py         # Self-contained MedGemma Critic + consensus logic
+│   ├──  fracmas_agent_module.py         # Self-contained MedGemma Critic + consensus logic
 │   ├──  patient_agent_graph.py        # LangGraph-based Patient Interface Agent workflow
 │   ├──  report_generator.py           # ReportLab multi-page PDF report generator
 │   ├──  shared.py                     # Shared state (IMAGE_STORE, CLASS_NAMES)
 │   └──  requirements.txt
 │
 ├──  src/
-│   └──  medai/
+│   └──  fracmas/
 │       ├──  app.py                    # Streamlit application (local use / experimentation)
 │       ├──  agents/                   # Modular agent implementations
 │       │   ├── diagnostic_agent.py      # Single-model inference
@@ -315,7 +315,7 @@ CVPR-Submission-2026-FRAC-MAS/
 │   │   ├── evaluate_fracatlas.py        # FracAtlas external validation
 │   │   ├── evaluate_roboflow.py         # Roboflow external validation
 │   │   ├── evaluate_critic.py           # Critic Agent evaluation on test set
-│   │   └── evaluate_medai_mamba.py
+│   │   └── evaluate_fracmas_mamba.py
 │   ├──  inference/
 │   │   ├── inspect_images.py            # Per-image per-model logits + Grad-CAM export
 │   │   └── run_xfmamba_inference.py
@@ -461,7 +461,7 @@ Key endpoints:
 ### Running the Streamlit App (Local / Experimentation)
 
 ```bash
-streamlit run src/medai/app.py
+streamlit run src/fracmas/app.py
 # Opens at http://localhost:8501
 ```
 
