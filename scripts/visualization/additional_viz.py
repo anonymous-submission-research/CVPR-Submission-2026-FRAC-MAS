@@ -1,5 +1,5 @@
 """
-Generate additional publication-quality figures for the DeepCK results section.
+Generate additional publication-quality figures for the Frac-MAS results section.
 
 Outputs (all saved to outputs/figures/):
   1. per_class_coverage.pdf       — Grouped bar chart: accuracy vs conformal coverage per class

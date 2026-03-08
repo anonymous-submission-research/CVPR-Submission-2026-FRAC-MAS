@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MACDSS — Multi-Agent Clinical Decision Support System",
+  title: "FRAC-MAS: Fracture Radiograph Analysis using Conformal Multi-Agent System",
   description:
     "A multi-agent framework for human-verified orthopedic fracture diagnosis combining ensemble deep learning, Grad-CAM explainability, RAG-grounded knowledge, and conformal prediction. CVPR 2026.",
 };

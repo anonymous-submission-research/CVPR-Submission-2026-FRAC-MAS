@@ -99,7 +99,7 @@ export default function Home() {
             CVPR 2026
           </span>
           <span className="hidden sm:block text-sm font-semibold text-slate-200">
-            MACDSS
+            Frac-MAS
           </span>
         </div>
         <nav className="hidden md:flex gap-6 text-sm text-slate-400">
@@ -256,7 +256,7 @@ export default function Home() {
             <div className="border border-slate-700 rounded-lg overflow-hidden bg-white">
               <Image
                 src="/figures/architecture-diagram.png"
-                alt="MACDSS end-to-end system architecture"
+                alt="Frac-MAS end-to-end system architecture"
                 width={1400}
                 height={600}
                 className="w-full h-auto"
@@ -456,7 +456,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto space-y-8">
             <div>
               <SectionLabel>
-                MACDSS — Multi-Agent Clinical Decision Support System
+                FRAC-MAS: Fracture Radiograph Analysis using Conformal Multi-Agent System
               </SectionLabel>
               <SectionTitle>Four-Agent Workflow</SectionTitle>
               <p className="mt-2 text-sm text-slate-400 max-w-2xl">
@@ -717,7 +717,7 @@ export default function Home() {
               <SectionTitle>Clinician Reader Study</SectionTitle>
               <p className="mt-2 text-sm text-slate-400 max-w-2xl">
                 Three practicing orthopedic surgeons evaluated system outputs
-                using the MACDSS grading protocol. Each rater first provided a
+                using the Frac-MAS grading protocol. Each rater first provided a
                 blind diagnosis, then reviewed the AI output and scored it on a
                 5-point Likert scale.
               </p>
@@ -997,7 +997,7 @@ export default function Home() {
                 <FileText className="h-6 w-6 mx-auto text-teal-400 group-hover:scale-110 transition-transform" />
                 <p className="font-semibold text-slate-200">Clinician Rubric</p>
                 <p className="text-xs text-slate-500">
-                  MACDSS evaluation protocol (PDF + web)
+                  Frac-MAS evaluation protocol (PDF + web)
                 </p>
               </Link>
             </div>
