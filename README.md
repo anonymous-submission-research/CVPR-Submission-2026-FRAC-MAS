@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/PyTorch-2.0+-red.svg" alt="PyTorch">
   <img src="https://img.shields.io/badge/Next.js-16+-black.svg" alt="Next.js">
   <img src="https://img.shields.io/badge/FastAPI-backend-teal.svg" alt="FastAPI">
-  <img src="https://img.shields.io/badge/CVPR-2026-orange.svg" alt="CVPR 2026">
+  <!-- <img src="https://img.shields.io/badge/CVPR-2026-orange.svg" alt="CVPR 2026"> -->
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
 </p>
 
